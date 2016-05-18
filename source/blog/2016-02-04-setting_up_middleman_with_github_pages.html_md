@@ -3,7 +3,7 @@ title: Middleman Blog with GitHub Pages
 author: Scott Savage
 date: 2016-02-04 02:40 UTC
 tags: middleman, github, github pages, tutorial
-published: true
+published: false
 ---
 
 Middleman is a static site generation framework with an available blog extension package.  I've tried to set up a blog with Middleman in the past, but I've always had trouble with deploying to GitHub pages.  To me it's not as straight forward as it should be, but I think with a few tips it can easily be done.  Here are the steps that worked for me.  
