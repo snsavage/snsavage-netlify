@@ -69,6 +69,7 @@ $ git checkout development
 I used the Middleman Deploy extension to handle deploying to GitHub Pages.  The following instructions can be found [here](https://github.com/middleman-contrib/middleman-deploy "Middleman Deploy").  As of this writing there is a typo in the Middleman Deploy `README.md`.  I've noted it below.     
 
 Add to your Gemfile.
+
 ```shell
 gem 'middleman-deploy', '~> 1.0'
 ```
