@@ -9,31 +9,44 @@
   </head>
   <body>
     
-    <div id="main" role="main">
-      <%= yield %>
-    </div>
-    
-    <aside>
-      <h2>Recent Articles</h2>
-      <ol>
-        <% blog.articles[0...10].each do |article| %>
-          <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-        <% end %>
-      </ol>
+    <header>
+      <nav class="clearfix">
+        <h1>snsavage.com</h1>
+        <ul>
+          <li class="nav-right"><%= link_to "Home", "/" %></li>
+          <li class="nav-right"><%= link_to "About", "about" %></li>
+          <li class="nav-right"><%= link_to "Contact", "contact" %></li>
+        </ul>
+      </nav>
+    </header>
 
-      <h2>Tags</h2>
-      <ol>
-        <% blog.tags.each do |tag, articles| %>
-          <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
-        <% end %>
-      </ol>
+    <main>
+      <div id="main" role="main">
+        <%= yield %>
+      </div>
+      
+      <aside>
+        <h2>Recent Articles</h2>
+        <ol>
+          <% blog.articles[0...10].each do |article| %>
+            <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+          <% end %>
+        </ol>
 
-      <h2>By Year</h2>
-      <ol>
-        <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-          <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
-        <% end %>
-      </ol>
-    </aside>
+        <h2>Tags</h2>
+        <ol>
+          <% blog.tags.each do |tag, articles| %>
+            <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
+          <% end %>
+        </ol>
+
+        <h2>By Year</h2>
+        <ol>
+          <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+            <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
+          <% end %>
+        </ol>
+      </aside>
+    </main>
   </body>
 </html>

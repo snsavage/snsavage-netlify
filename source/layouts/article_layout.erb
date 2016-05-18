@@ -1,0 +1,8 @@
+<% wrap_layout :layout do %>
+  <article>
+    <h2><%= current_page.data.title %></h2>
+    <h3><%= current_page.date.strftime('%B, %e %Y') %></h3>
+    <h4>By <%= current_page.data.author %></h4>
+    <%= yield %>
+  </article>
+<% end %>

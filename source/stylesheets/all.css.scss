@@ -1,4 +1,179 @@
 @charset "utf-8";
-
+@import "normalize";
 @import "codeblock";
 
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700italic,700,300,300italic);
+
+@font-face {
+  font-family: 'Hack';
+  src:  url('../fonts/hack-regular-latin-webfont.eot?v=2.020');
+  src:  url('../fonts/hack-regular-latin-webfont.eot?#iefix&v=2.020')
+          format('embedded-opentype'),
+        url('../fonts/hack-regular-latin-webfont.woff2?v=2.020')
+          format('woff2'),
+        url('../fonts/hack-regular-latin-webfont.woff?v=2.020')
+          format('woff'),
+        url('../fonts/hack-regular-latin-webfont.ttf?v=2.020')
+          format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Site Settings */
+$serif-font: "Merriweather", serif;
+$sans-font: "Merriweather Sans", sans-serif;
+$monospace-font: "Hack", monospace;
+$code-background: rbga(0,0,0,0.44);
+
+$nav-height: 3em;
+$nav-title-size: 1.5em;
+$nav-links-size: 1em;
+$nav-title-line-height: $nav-height / $nav-title-size;
+$nav-links-line-height: $nav-height / $nav-links-size;
+$nav-bar-background-color: #333;
+$nav-bar-color: white;
+$nav-hover-background: black;
+
+$border-color: #333;
+$link-color: #333;
+
+
+@media (max-width: 960px) {
+  nav, main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 960px) {
+  nav, main {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+html {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sans-font;
+}
+
+p {
+  font-family: $serif-font;
+  font-weight: 300;
+}
+
+header {
+  height: $nav-height;
+  background-color: $nav-bar-background-color;
+  color: $nav-bar-color;
+}
+
+nav {
+  height: $nav-height;
+}
+
+nav h1 {
+  font-size: $nav-title-size;
+  line-height: $nav-title-line-height;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  font-size: $nav-links-size;
+  line-height: $nav-links-line-height;
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav li a {
+  font-family: $sans-font;
+  padding: 0 1em;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: $nav-bar-color;
+}
+
+nav li a:hover {
+  background-color: $nav-hover-background;
+}
+
+p {
+  font-family: $serif-font;
+  font-size: 1.0em;
+  line-height: 1.6;
+}
+
+article h2, h3, h4{
+  text-align: center;
+}
+
+.article-summary {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.article-summary:nth-child(n+2) {
+  border-top: 1px dotted $border-color;
+}
+
+h2 a {
+  color: #333;
+  text-decoration: none;
+}
+
+a {
+  color: $link-color;
+}
+
+p code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  border-radius: 3px;
+  background-color: $code-background;
+}
+
+p code:before, p code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+code, kbd, pre, samp {
+  font-family: $monospace-font;
+}
+
+.highlight {
+  word-break: normal;
+  padding: 0.5em;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: $code-background;
+  border-radius: 3px;
+}

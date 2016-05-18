@@ -5,6 +5,7 @@
 # Time.zone = "UTC"
 
 activate :blog do |blog|
+  blog.layout = "article_layout"
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
 
@@ -13,7 +14,7 @@ activate :blog do |blog|
   # blog.sources = "{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
   # blog.layout = "layout"
-  # blog.summary_separator = /(READMORE)/
+  blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = "{year}.html"
   # blog.month_link = "{year}/{month}.html"
@@ -107,4 +108,9 @@ activate :deploy do |deploy|
   deploy.remote = "origin"
   deploy.branch = "master"
 end
+
+set :markdown_engine, :redcarpet
+
+activate :syntax, :line_numbers => true
+set :markdown, :fenced_code_blocks => true, :smartypants => true
 
