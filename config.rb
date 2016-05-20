@@ -1,3 +1,5 @@
+require 'font-awesome-sass'
+
 ###
 # Blog settings
 ###

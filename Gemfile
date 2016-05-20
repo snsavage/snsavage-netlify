@@ -14,3 +14,5 @@ gem "redcarpet"
 
 gem "nokogiri"
 
+gem 'font-awesome-sass', '~> 4.6.2'
+

@@ -4,7 +4,7 @@
     <%= stylesheet_link_tag "all" %>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
-    <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <title>snsavage.com<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
   <body>
@@ -48,5 +48,33 @@
         </ol>
       </aside>
     </main>
+    <footer>
+      <div class="footer-content">
+        <div class="left-footer">
+          <ul>
+            <li><%= link_to "Home", "/" %></li>
+            <li><%= link_to "About", "about" %></li>
+            <li><%= link_to "Contact", "contact" %></li>
+          </ul>
+        </div>
+        <div class="center-footer">
+          <p>Made in Pennsylvania, U.S.A.</p>
+          <p id="copyright">&#169; <em>2016 Scott Savage</em></p>
+        </div>
+        <div class="social">
+          <p>
+            <a href="https://twitter.com/snsavage" target="_blank">
+              <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/snsavage" target="_blank">
+              <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/snsavage" target="_blank">
+              <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -2,6 +2,9 @@
 @import "normalize";
 @import "codeblock";
 
+@import "font-awesome-compass";
+@import "font-awesome";
+
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700italic,400italic);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700italic,700,300,300italic);
 
@@ -38,16 +41,21 @@ $nav-hover-background: black;
 $border-color: #333;
 $link-color: #333;
 
+$footer-background-color: hsla(0, 0%, 0%, 0.2);
+
+
+
 
 @media (max-width: 960px) {
-  nav, main {
+
+  nav, main, .footer-content {
     width: 90%;
     margin: 0 auto;
   }
 }
 
 @media (min-width: 960px) {
-  nav, main {
+  nav, main, .footer-content {
     width: 960px;
     margin: 0 auto;
   }
@@ -177,3 +185,78 @@ code, kbd, pre, samp {
   background-color: $code-background;
   border-radius: 3px;
 }
+
+footer {
+  height: 10em;
+  background-color: $footer-background-color;
+  color: hsla(0, 0%, 0%, 0.50);
+  border-top: 1px solid hsla(0, 0%, 0%, 0.50);
+}
+
+#copyright {
+  color: hsla(0, 0%, 0%, 0.25);
+  font-size: 0.9em;
+}
+
+.footer-content {
+  padding: 10px;
+}
+
+.footer-content div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.left-footer {
+  text-align: left;
+  border-right: 1px dotted $border-color;
+  width: 32.5%;
+}
+
+.left-footer div {
+  display: inline-block;
+}
+
+.left-footer ul, .left-footer li {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.left-footer a {
+  color: hsla(0, 0%, 0%, 0.50);
+  text-decoration: none;
+}
+
+.left-footer a:hover {
+  color: hsla(0, 0%, 0%, 0.80);
+  text-decoration: underline;
+}
+
+.center-footer {
+  text-align: center;
+  width: 32.5%;
+}
+
+.social {
+  text-align: right;
+  border-left: 1px dotted $border-color;
+  width: 32.5%;
+}
+
+.social a {
+  color: hsla(0, 0%, 0%, 0.50);
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: hsla(0, 0%, 0%, 0.80);
+}
+
+
+
+
+
+
+
+
