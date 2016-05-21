@@ -14,8 +14,8 @@
         <h1>snsavage.com</h1>
         <ul>
           <li class="nav-right"><%= link_to "Home", "/" %></li>
-          <li class="nav-right"><%= link_to "About", "about" %></li>
-          <li class="nav-right"><%= link_to "Contact", "contact" %></li>
+          <li class="nav-right"><%= link_to "About", "about.html" %></li>
+          <li class="nav-right"><%= link_to "Contact", "contact.html" %></li>
         </ul>
       </nav>
     </header>
@@ -25,6 +25,7 @@
         <%= yield %>
       </div>
       
+      <% if current_page.path != "about.html" && current_page.path != "contact.html"  %>
       <aside>
         <h2>Recent Articles</h2>
         <ol>
@@ -47,14 +48,15 @@
           <% end %>
         </ol>
       </aside>
+    <% end %>
     </main>
     <footer>
       <div class="footer-content">
         <div class="left-footer">
           <ul>
             <li><%= link_to "Home", "/" %></li>
-            <li><%= link_to "About", "about" %></li>
-            <li><%= link_to "Contact", "contact" %></li>
+            <li><%= link_to "About", "about.html" %></li>
+            <li><%= link_to "Contact", "contact.html" %></li>
           </ul>
         </div>
         <div class="center-footer">
