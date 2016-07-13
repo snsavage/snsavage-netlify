@@ -274,7 +274,42 @@ footer {
   color: hsla(0, 0%, 0%, 0.80);
 }
 
+.article-title {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
 
+.article-date {
+  display: inline-block;
+  float: right;
+  margin: 0;
+  padding: 0;
+  color: hsla(0, 0%, 0%, 0.60);
+  font-style: italic;
+  font-weight: normal;
+}
+
+.article-summary-text {
+  text-align: justify;
+}
+
+.read-more {
+  float: right;
+}
+
+aside {
+  background: hsla(0, 0%, 0%, 0.10);
+  // border: 1px solid $border-color;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background-color: $code-background;
+}
+
+aside h2 {
+  font-size: 1.25em;
+}
 
 
 
