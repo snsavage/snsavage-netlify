@@ -29,21 +29,42 @@ $sans-font: "Merriweather Sans", sans-serif;
 $monospace-font: "Hack", monospace;
 $code-background: rgba(247, 247, 247, 1);
 
+$heading-text-color: hsl(0, 0%, 20%);;
+$paragraph-text-color: hsl(0, 0%, 20%);;
+
 $nav-height: 3em;
 $nav-title-size: 1.5em;
 $nav-links-size: 1em;
 $nav-title-line-height: $nav-height / $nav-title-size;
 $nav-links-line-height: $nav-height / $nav-links-size;
-$nav-bar-background-color: #333;
+$nav-bar-background-color: hsl(0, 0%, 20%);;
 $nav-bar-color: white;
-// $nav-hover-background: black;
 $nav-hover-background: hsl(198, 100%, 37%);
-$nav-focus-background: hsl(243, 100%, 37%);
+$nav-focus-background: $nav-hover-background;
 
-$border-color: #333;
-$link-color: #333;
+$border-color: hsl(0, 0%, 20%);;
+$link-color: hsl(198, 100%, 37%);
+$link-visited: hsl(198, 100%, 30%);
+$link-hover: hsl(78, 100%, 37%);
+$link-active: hsl(78, 100%, 30%);
 
 $footer-background-color: hsla(0, 0%, 0%, 0.2);
+
+a:link {
+  color: $link-color;
+}
+
+a:visited {
+  color: $link-visited;
+}
+
+a:hover {
+  color: $link-hover;
+}
+
+a:active {
+  color: $link-active;
+}
 
 @media only screen and (max-width: 960px) {
   nav, main, .footer-content {
@@ -93,11 +114,13 @@ main {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $sans-font;
+  color: $heading-text-color;
 }
 
 p {
   font-family: $serif-font;
   font-weight: 300;
+  color: $paragraph-text-color;
 }
 
 header {
@@ -116,6 +139,7 @@ nav h1 {
   margin: 0;
   padding: 0;
   display: inline-block;
+  color: $nav-bar-color;
 }
 
 nav ul {
@@ -138,6 +162,14 @@ nav li a {
   display: block;
   text-align: center;
   text-decoration: none;
+  color: $nav-bar-color;
+}
+
+nav li a:link {
+  color: $nav-bar-color;
+}
+
+nav li a:visited {
   color: $nav-bar-color;
 }
 
@@ -171,13 +203,21 @@ article h2, h3, h4{
   border-top: 1px dotted $border-color;
 }
 
-h2 a {
-  color: #333;
+h2 a:link {
+  color: $heading-text-color;
   text-decoration: none;
 }
 
-a {
-  color: $link-color;
+h2 a:visited {
+  color: $heading-text-color;
+}
+
+h2 a:hover {
+  color: $link-hover;
+}
+
+h2 a:active {
+  color: $link-active;
 }
 
 p code {
