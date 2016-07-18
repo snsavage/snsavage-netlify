@@ -159,9 +159,12 @@ article h2, h3, h4{
   text-align: center;
 }
 
+.article-summaries {
+  // margin: 2em 0 2em 0;
+}
+
 .article-summary {
-  margin-top: 10px;
-  padding: 10px;
+  padding: 2em 0.5em;
 }
 
 .article-summary:nth-child(n+2) {
@@ -310,7 +313,7 @@ footer {
 }
 
 .article-summary-text p {
-  margin: 0 0 1em 0;
+  margin: 0 0 0.5em 0;
 }
 
 .read-more {
