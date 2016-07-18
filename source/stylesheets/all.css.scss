@@ -36,25 +36,23 @@ $nav-title-line-height: $nav-height / $nav-title-size;
 $nav-links-line-height: $nav-height / $nav-links-size;
 $nav-bar-background-color: #333;
 $nav-bar-color: white;
-$nav-hover-background: black;
+// $nav-hover-background: black;
+$nav-hover-background: hsl(198, 100%, 37%);
+$nav-focus-background: hsl(243, 100%, 37%);
 
 $border-color: #333;
 $link-color: #333;
 
 $footer-background-color: hsla(0, 0%, 0%, 0.2);
 
-
-
-
-@media (max-width: 960px) {
-
+@media only screen and (max-width: 960px) {
   nav, main, .footer-content {
     width: 90%;
     margin: 0 auto;
   }
 }
 
-@media (min-width: 960px) {
+@media only screen and (min-width: 960px) {
   nav, main, .footer-content {
     width: 960px;
     margin: 0 auto;
@@ -145,6 +143,10 @@ nav li a {
 
 nav li a:hover {
   background-color: $nav-hover-background;
+}
+
+nav li a:focus {
+  background-color: $nav-focus-background;
 }
 
 p {
@@ -281,8 +283,8 @@ footer {
 }
 
 .article-date {
-  display: block;
-  float: left;
+  display: inline-block;
+  float: right;
   margin: 0;
   padding: 0;
   color: hsla(0, 0%, 0%, 0.60);
@@ -290,8 +292,25 @@ footer {
   font-weight: normal;
 }
 
+@media only screen and (max-width: 750px) {
+  .article-title {
+    display: block;
+  }
+
+  .article-date {
+    display: block;
+    float: none;
+    text-align: left;
+    margin: 0.5em 0;
+  }
+}
+
 .article-summary-text {
   text-align: justify;
+}
+
+.article-summary-text p {
+  margin: 0 0 1em 0;
 }
 
 .read-more {
