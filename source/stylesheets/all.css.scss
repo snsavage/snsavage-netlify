@@ -226,6 +226,10 @@ nav li {
   display: block;
 }
 
+.hidden-nav-trigger a {
+  color: $nav-bar-color;
+}
+
 nav li a {
   font-family: $sans-font;
   padding: 0 1em;
