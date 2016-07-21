@@ -80,6 +80,12 @@ a:active {
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .hidden-nav-trigger {
+    display: none;
+  }
+}
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -133,6 +139,13 @@ nav {
   height: $nav-height;
 }
 
+// .hidden-nav-menu {
+//   display: inline-block;
+//   float: right;
+//   margin: 0;
+//   padding: 0;
+// }
+
 nav h1 {
   font-size: $nav-title-size;
   line-height: $nav-title-line-height;
@@ -154,6 +167,59 @@ nav li {
   line-height: $nav-links-line-height;
   display: inline-block;
   list-style-type: none;
+}
+
+.hidden-nav-trigger {
+  float: right;
+  padding: 0 1em;
+
+  &:link {
+    color: $nav-bar-color;
+  }
+  &:visited {
+    color: $nav-bar-color;
+  }
+  &:hover {
+    background-color: $nav-hover-background;
+  }
+  &:focus {
+    background-color: $nav-focus-background;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 100%;
+  }
+
+  nav {
+    height: 100%;
+  }
+
+  .nav-menu {
+    // float: left;
+    clear: both;
+    width: 100%;
+    display: none;
+    // text-align: center;
+    // position: absolute;
+    // top: $nav-height;
+    // right: -10%;
+    background-color: $nav-bar-background-color;
+  }
+
+  .nav-right {
+    float: none;
+    width: 100%;
+  }
+}
+
+.hidden-nav-menu:hover > .nav-menu {
+  display: block;
+}
+
+.hidden-nav-trigger:focus + .nav-menu {
+  display: block;
 }
 
 nav li a {

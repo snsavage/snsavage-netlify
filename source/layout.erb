@@ -12,13 +12,16 @@
   <body>
     <div id="container">
     <header>
-      <nav class="clearfix">
+      <nav class="clearfix hidden-nav-menu">
         <h1>snsavage.com</h1>
-        <ul>
-          <li class="nav-right"><%= link_to "Home", "/" %></li>
-          <li class="nav-right"><%= link_to "About", "about.html" %></li>
-          <li class="nav-right"><%= link_to "Contact", "contact.html" %></li>
-        </ul>
+        <%# <div class="hidden-nav-menu"> %>
+          <h1 class="hidden-nav-trigger"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></h1>
+          <ul class="nav-menu">
+            <li class="nav-right"><%= link_to "Home", "/" %></li>
+            <li class="nav-right"><%= link_to "About", "about.html" %></li>
+            <li class="nav-right"><%= link_to "Contact", "contact.html" %></li>
+          </ul>
+        <%# </div> %>
       </nav>
     </header>
 
