@@ -218,6 +218,10 @@ nav li {
   display: block;
 }
 
+.hidden-nav-menu:active > .nav-menu {
+  display: block;
+}
+
 .hidden-nav-trigger:focus + .nav-menu {
   display: block;
 }
