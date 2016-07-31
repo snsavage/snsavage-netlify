@@ -70,13 +70,13 @@ I used the Middleman Deploy extension to handle deploying to GitHub Pages.  The 
 
 Add to your Gemfile.
 
-```shell
+```ruby
 gem 'middleman-deploy', '~> 1.0'
 ```
 
 Add the following lines to your `config.rb`.
 
-```shell
+```ruby
 activate :deploy do |deploy|
   deploy.method = :git  # This is shown as deploy.deploy_method in the README.
   deploy.remote = "origin"
