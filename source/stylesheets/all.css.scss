@@ -139,13 +139,6 @@ nav {
   height: $nav-height;
 }
 
-// .hidden-nav-menu {
-//   display: inline-block;
-//   float: right;
-//   margin: 0;
-//   padding: 0;
-// }
-
 nav h1 {
   font-size: $nav-title-size;
   line-height: $nav-title-line-height;
@@ -208,7 +201,7 @@ nav li {
     background-color: $nav-bar-background-color;
   }
 
-  .nav-right {
+  .nav-menu li {
     float: none;
     width: 100%;
   }
