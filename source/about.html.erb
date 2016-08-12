@@ -1,17 +1,43 @@
 <div class="about">
-<h1>snsavage.com is Scott Savage</h1>
-<div class="images">
-<%= tag :img, :src => "images/scott.jpg", :title => "Scott", :alt => "Portrait of Scott" %>
-<%= tag :img, :src => "images/family.jpg", :title => "Scott and family.", :alit => "Picture of Scott and family." %>
-</div> <p>I have spent the last 10 years as a financial professional working in industries including investments, banking and healthcare.  As a way to combine my financial career with my interest in technology, I completed a Master of Science in Information Systems degree from The Pennsylvania State University in May 2015.</p>
+  <h1>snsavage.com is written by Scott Savage</h1>
+  <div class="images">
+    <%= tag :img, :src => "images/scott.jpg",
+      :title => "Scott",
+      :alt => "Portrait of Scott" %>
+    <%= tag :img, :src => "images/family.jpg",
+      :title => "Scott and family.",
+      :alit => "Picture of Scott and family." %>
+  </div>
 
-<p>However, after realizing that I enjoyed my grad school projects more than my career in finance, I decided to leave finance behind to pursue a technology related career.  I'm currently attending the Flatiron School's Online Web Developer Program.  When not spending time with my wife and daughter, I enjoys road cycling around Lancaster County.</p>
+  <p>
+    I have spent the last 10 years as a financial professional working in 
+    industries including investments, banking and healthcare.  As a way to 
+    combine my financial career with my interest in technology, I completed a 
+    Master of Science in Information Systems degree from The Pennsylvania State 
+    University in May 2015.
+  </p>
 
-<style>
-  .strava-badge- { display: inline-block; height: 48px; }
-    .strava-badge- img { visibility: hidden; height: 48px; }
-      .strava-badge-:hover { background-position: 0 -63px; }
-        .strava-badge-follow { height: 48px; width: 48px; background: url(//badges.strava.com/echelon-sprite-48.png) no-repeat 0 0; }
-</style>
-<a href="http://strava.com/athletes/766369/badge" class="strava-badge- strava-badge-follow" target="_blank"><img src="//badges.strava.com/echelon-sprite-48.png" alt="Strava" /></a>
+  <p>
+    However, after realizing that I enjoyed my grad school projects more 
+    than my career in finance, I decided to leave finance behind to pursue a 
+    technology related career.  I'm currently attending the Flatiron School's 
+    Online Web Developer Program.  When not spending time with my wife and 
+    daughter, I enjoy road cycling around Lancaster County.
+  </p>
+
+  <h2>Learn more about me:</h2>
+
+  <div class="about-social">
+    <p>
+      <%= partial "social_links" %>
+      <br>
+      <a href="https://www.strava.com/athletes/snsavage">Also on Strava</a>
+    </p>
+  </div>
+
+  <h3>
+    Thank you for visiting.  If you have any questions please 
+    <%= link_to "contact me here", "/contact.html" %>.
+  </h3>
 </div>
+

@@ -522,7 +522,36 @@ aside h2 {
   margin: 1em 2em;
 }
 
+.about h1 {
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+}
 
+.about h2 {
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.about h3 {
+  font-weight: lighter;
+  font-size: 1em;
+  font-style: italic;
+}
+
+
+.about-social {
+  text-align: center;
+}
+
+.about-social a {
+  color: hsla(0, 0%, 0%, 0.50);
+  text-decoration: none;
+}
+
+.about-social a:hover {
+  color: hsla(0, 0%, 0%, 0.80);
+}
 
 
 
