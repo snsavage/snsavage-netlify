@@ -709,6 +709,28 @@ button:active {
   }
 }
 
+.thank-you {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-40%);
+}
+
+@media only screen and (max-width: 625px) {
+  .thank-you {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+}
+
+.thank-you h2 {
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+  // margin: 25% auto;
+}
 
 
 

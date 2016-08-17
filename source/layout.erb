@@ -13,7 +13,7 @@
         <div id="main" role="main">
           <%= yield %>
         </div>
-        <% if current_page.path != "about.html" && current_page.path != "contact.html"  %>
+        <% if !data.aside.exclude.include?(current_page.path) %>
           <aside>
             <%= partial "aside" %>
           </aside>
