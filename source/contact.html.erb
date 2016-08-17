@@ -1,6 +1,41 @@
-<form action="https://formspree.io/snsavage@gmail.com" method="POST">
-  <input type="text" name="name">
-  <input type="email" name="_replyto">
-  <input type="submit" value="Send">
-  <input type="hidden" name="_next" value="//snsavage.com" />
-</form>
+<div class="contact">
+  <h1>Contact me:</h1>
+  <p>
+    I would love to hear from you!  Let me know if you would like to discuss
+    something I've posted or if you would like to discuss a project that you 
+    have in mind.  I'm also open to pair progamming.  Feel free to 
+    contact me through any of the social networks listed below.
+  </p>
+
+<div class="contact-form">
+  <form name="contact" action="index" netlify netlify-honeypot="bot-field">
+    <div class="form-div">
+      <label>Name</label>
+      <input class="form-fields" type="text" name="name">
+    </div>
+    <div class="form-div">
+      <label>Email</label>
+      <input class="form-fields" type="email" name="email">
+    </div>
+    <div class="form-div">
+      <label>Message</label>
+      <textarea class="form-fields" name="message" rows="5"></textarea>
+    </div>
+    <div class="form-div">
+      <button>Send Message</button>
+      <p class="hidden"><label>Bot field: <input name="bot-field"></label></p>
+      <%# <input type="submit" value="Send Message"> %>
+      <%# <input type="hidden" name="_next" value="//snsavage.com" /> %>
+    </div>
+  </form>
+</div>
+
+<div>
+  <h3>Also, please feel free to contact me here:</h3>
+  <div class="about-social">
+    <p>
+      <%= partial "social_links" %>
+    </p>
+  </div>
+</div>
+</div>
