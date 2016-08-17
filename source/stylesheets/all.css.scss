@@ -248,6 +248,18 @@ nav li a:focus {
   background-color: $nav-focus-background;
 }
 
+nav h1 a {
+  text-decoration: none;
+}
+
+nav h1 a:link {
+  color: $nav-bar-color;
+}
+
+nav h1 a:visited {
+  color: $nav-bar-color;
+}
+
 p {
   font-family: $serif-font;
   font-size: 1.0em;
