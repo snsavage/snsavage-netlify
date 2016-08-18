@@ -486,6 +486,16 @@ footer {
   font-weight: normal;
 }
 
+article .date {
+  font-style: italic;
+  font-weight: normal;
+}
+
+article .author {
+  // font-style: italic;
+  font-weight: normal;
+}
+
 @media only screen and (max-width: 750px) {
   .article-title {
     display: block;
