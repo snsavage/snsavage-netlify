@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
   <head>
-    <%= partial "head" %>
+    <%= partial "partials/head" %>
   </head>
   <body>
     <div id="container">
       <header>
-        <%= partial "nav" %>
+        <%= partial "partials/nav" %>
       </header>
 
       <main>
@@ -15,12 +15,12 @@
         </div>
         <% if !data.aside.exclude.include?(current_page.path) %>
           <aside>
-            <%= partial "aside" %>
+            <%= partial "partials/aside" %>
           </aside>
         <% end %>
       </main>
       <footer>
-        <%= partial "footer" %>
+        <%= partial "partials/footer" %>
       </footer>
     </div>
     <%= google_analytics_universal_tag %>

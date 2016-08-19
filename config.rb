@@ -1,5 +1,7 @@
 require 'font-awesome-sass'
 
+activate :sprockets
+
 ###
 # Blog settings
 ###
@@ -77,9 +79,6 @@ activate :livereload
 
 # Methods defined in the helpers block are available in templates
 # helpers do
-#   def some_helper
-#     "Helping"
-#   end
 # end
 
 set :css_dir, 'stylesheets'
@@ -88,7 +87,7 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-set :partials_dir, 'partials'
+# set :partials_dir, 'partials'
 
 # Build-specific configuration
 configure :build do
@@ -108,11 +107,11 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.remote = "origin"
-  deploy.branch = "master"
-end
+# activate :deploy do |deploy|
+#   deploy.method = :git
+#   deploy.remote = "origin"
+#   deploy.branch = "master"
+# end
 
 set :markdown_engine, :redcarpet
 
