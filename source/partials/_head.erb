@@ -4,5 +4,6 @@
 <title>
   snsavage.com<%= ' - ' + current_article.title unless current_article.nil? %>
 </title>
-<%= stylesheet_link_tag "all" %>
+<%= stylesheet_link_tag "site" %>
+<script src="https://use.fontawesome.com/68dc265057.js"></script>
 <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>

@@ -9,13 +9,10 @@ gem "middleman-livereload", "~>3.0"
 # For feed.xml.builder
 gem "builder", "~> 3.0"
 
-# gem "middleman-deploy", "~> 1.0"
 gem "middleman-syntax"
 gem "redcarpet"
 
 gem "nokogiri"
 
-gem 'font-awesome-sass', '~> 4.6'
 gem 'middleman-google-analytics', '~> 2.1'
 
-gem "middleman-sprockets", "~> 4.0.0.rc"
