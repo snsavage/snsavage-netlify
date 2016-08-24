@@ -14,5 +14,7 @@ gem "redcarpet"
 
 gem "nokogiri"
 
+gem 'middleman-dotenv', '~> 2.0'
+
 gem 'middleman-google-analytics', '~> 2.1'
 

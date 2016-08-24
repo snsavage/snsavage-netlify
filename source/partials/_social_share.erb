@@ -1,7 +1,15 @@
-<%# <a href="https://twitter.com/intent/tweet?url=<%= full_url(current_page.path) %1>&text=<%= current_page.title %1>&via=snavage">Share on Twitter</a> %>
+<p>
+<%= link_to "Share on Twitter", twitter(current_page) %> | 
+<%= link_to "Share on Facebook", facebook(current_page) %> | 
+<%= link_to "Share on Google+", google(current_page) %> | 
+<%= link_to "Share on LinkedIn", linkedin(current_page) %>
+</p>
 
-<%= full_url("hello") %>
+<p>
+<%# <%= URI(data.social.url.development + current_page.url) %1> %>
+</p>
 
-<%= test %>
+<p>
+<%# <a href="<%= social_url(current_page.url) %1>"><%= social_url(current_page.url) %1></a> %>
+</p>
 
-<%# <%= Social::test_lib %1> %>

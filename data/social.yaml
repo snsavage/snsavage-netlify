@@ -1,0 +1,5 @@
+url:
+  development: 'http://sherlock.local:4567'
+  production: 'http://www.snsavage.com'
+twitter:
+  via: snsavage

@@ -79,6 +79,9 @@ GEM
       servolux
       tilt (~> 1.4.1)
       uglifier (~> 3.0)
+    middleman-dotenv (2.0.0)
+      dotenv (>= 2.0)
+      middleman-core (>= 4.0)
     middleman-google-analytics (2.1.1)
       activesupport (~> 4.1)
       erubis
@@ -129,6 +132,7 @@ DEPENDENCIES
   builder (~> 3.0)
   middleman (~> 4.0)
   middleman-blog (~> 4.0)
+  middleman-dotenv (~> 2.0)
   middleman-google-analytics (~> 2.1)
   middleman-livereload (~> 3.0)
   middleman-syntax
