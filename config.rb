@@ -98,7 +98,7 @@ helpers do
   def twitter(page)
     short_url = bitly(full_url(page.url))
     uri = URI("https://twitter.com/intent/tweet")
-    query = {url: short_url, text: page.title, via: data.social.twitter.via}
+    query = {text: page.title + " " + short_url, via: data.social.twitter.via}
     uri.query = query.to_query
     uri
   end
