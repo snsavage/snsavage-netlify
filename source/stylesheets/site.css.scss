@@ -493,6 +493,10 @@ article .author {
   font-weight: normal;
 }
 
+article h2 {
+  font-size: 2em;
+}
+
 @media only screen and (max-width: 750px) {
   .article-title {
     display: block;
@@ -520,15 +524,21 @@ article .author {
 
 aside {
   background: hsla(0, 0%, 0%, 0.10);
-  // border: 1px solid $border-color;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-top: 2em;
+  margin-bottom: 2em;
   border-radius: 3px;
   background-color: $code-background;
+  font-family: $sans-font;
 }
 
 aside h2 {
   font-size: 1.25em;
+  font-family: $sans-font;
+}
+
+aside ol li {
+  font-family: $serif-font;
 }
 
 .about .images {
@@ -749,6 +759,57 @@ button:active {
   font-style: italic;
   text-align: center;
   // margin: 25% auto;
+}
+
+.article-frontmatter {
+  background-color: $nav-focus-background;
+  background-color: hsla(198, 100%, 37%, 0.75);
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 0.5em;
+  font-size: 0.80em;
+  font-family: $sans-font;
+}
+
+.article-frontmatter a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.article-frontmatter a:hover {
+  text-decoration: underline;
+}
+
+.article-frontmatter div {
+  display: inline;
+}
+
+.article-frontmatter .frontmatter {
+  float: left;
+}
+
+.social-share {
+  text-align: right;
+  float: right;
+}
+
+@media only screen and (max-width: 725px) {
+  .article-frontmatter div {
+    display: block;
+    text-align: center;
+    margin: 0.25em;
+  }
+
+  .article-frontmatter .frontmatter {
+    float: none;
+  }
+
+  .social-share {
+    float: none;
+    text-align: center;
+  }
 }
 
 

@@ -1,0 +1,11 @@
+<div class="article-frontmatter clearfix">
+  <div class="frontmatter">
+    <% if current_page.data.author %>
+      <i class="fa fa-user" aria-hidden="true"></i> 
+      By <%= current_page.data.author %> - 
+    <% end %>
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <%= current_page.date.strftime('%B %e, %Y') %>
+  </div>
+  <%= partial 'partials/social_share' %>
+</div>

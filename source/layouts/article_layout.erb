@@ -1,11 +1,8 @@
 <% wrap_layout :layout do %>
   <article>
     <h2><%= current_page.data.title %></h2>
-    <h3 class="date"><%= current_page.date.strftime('%B, %e %Y') %></h3>
-    <% if current_page.data.author %>
-      <h4 class="author">By <%= current_page.data.author %></h4>
-    <% end %>
-    <%= partial 'partials/social_share' %>
+    <%= partial 'partials/article_frontmatter' %>
     <%= yield %>
+    <%= partial 'partials/article_frontmatter' %>
   </article>
 <% end %>
