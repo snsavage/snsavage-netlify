@@ -269,6 +269,9 @@ article h2, h3, h4 {
 
 article p {
   text-align: justify;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 article > p > img {
@@ -314,6 +317,12 @@ p code {
   font-size: 85%;
   border-radius: 3px;
   background-color: $code-background;
+  overflow-wrap: break-word;
+  // text-align: left;
+  max-width: 90%;
+  // overflow-x: auto;
+  // word-break: inherit;
+  // word-wrap: inherit;
 }
 
 p code:before, p code:after {
