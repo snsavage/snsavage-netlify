@@ -263,8 +263,17 @@ p {
   line-height: 1.6;
 }
 
-article h2, h3, h4{
+article h2, h3, h4 {
   text-align: center;
+}
+
+article p {
+  text-align: justify;
+}
+
+article > p > img {
+  display: block;
+  margin: 0 auto;
 }
 
 .article-summaries {
