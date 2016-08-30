@@ -8,7 +8,7 @@
   </p>
 
 <div class="contact-form">
-  <form name="contact" action="thank-you" netlify netlify-honeypot="bot-field">
+  <form name="contact" method="post" action="https://formspree.io/9N242k@snsavage.com">
     <div class="form-div">
       <label>Name</label>
       <input class="form-fields" type="text" name="name">
@@ -23,7 +23,11 @@
     </div>
     <div class="form-div">
       <button>Send Message</button>
-      <p class="hidden"><label>Bot field: <input name="bot-field"></label></p>
+      <p class="hidden">
+        <input type="hidden" name="_next" value="//snsavage.com/thank-you.html" />
+        <input type="hidden" name="_subject" value="Message from snsavage.com." />
+        <input type="text" name="_gotcha" />
+      </p>
     </div>
   </form>
 </div>
