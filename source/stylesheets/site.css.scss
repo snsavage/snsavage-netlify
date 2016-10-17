@@ -263,8 +263,12 @@ p {
   line-height: 1.6;
 }
 
-article h2, h3, h4 {
+article h1, h3, h4 {
   text-align: center;
+}
+
+article h2 {
+  text-align: left;
 }
 
 article p {
@@ -513,7 +517,7 @@ article .author {
 }
 
 article h2 {
-  font-size: 2em;
+  font-size: 1.50em;
 }
 
 @media only screen and (max-width: 750px) {
