@@ -8,8 +8,6 @@ published: true
 
 ![Nature Path - Image from Unsplash](https://source.unsplash.com/eOpewngf68w/600x400 "Nature Path - Image from Unsplash") 
 
-*This is a blog post for the Flatiron School's Online Web Developer program.  You can find more information here: [learn.co/with/snavage](http://learn.co/with/snavage).*
-
 As part of the Flatiron School's Online Web Developer Program, the students have been asked to write regular blog posts.  The first topic asks why we decided to learn software development.  I think that my reason is best told by a story about why I joined the program.
 
 READMORE
@@ -44,5 +42,7 @@ When I started the project, I didn't want to build a simple website.  I wanted s
 
 In completing these grad school projects, I had committed myself to much larger and harder projects than I originally expected.  This required me to push myself very hard.  But I quickly realized that the projects didn't really feel like work.  They were both challenging and rewarding.  The type of work that I found engaging and enjoyable.  I knew that I wanted more and that I could turn this into a career.   
 
-I've had a few months between grad school and starting the Flatiron School's Online Web Developer program, but now that I'm back into web development I am super excited about what I'm learning and how I'm progressing.  It's been a long journey, but I'm excited to be embarking on a new career where I can put my tech skills to task.  
+I've had a few months between grad school and starting the Flatiron School's Online Web Developer program, but now that I'm back into web development I am super excited about what I'm learning and how I'm progressing.  It's been a long journey, but I'm excited to be embarking on a new career where I can put my tech skills to task. 
+
+*This is a blog post for the Flatiron School's Online Web Developer program.  You can find more information here: [learn.co/with/snavage](http://learn.co/with/snavage).* 
 
