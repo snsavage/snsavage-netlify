@@ -9,7 +9,7 @@ published: true
 
 RetroCasts provides a command line utility (cli) for quickly accessing episode data from RailsCasts.com.  It provides a quick and convenient way to search the site without leaving the terminal.  This post discusses the process for making the RetroCasts gem.
 
-The first major project for the Flatiron School's Online Web Developer program is the "CLI Data Gem Project".  So far the program has had several other larger projects, but this is the first project where a test suite is not provided as a framework.
+The first major project for the Flatiron School's Online Web Developer program is the "CLI Data Gem Project."  So far the program has had several other larger projects, but this is the first project where a test suite is not provided as a framework.
 
 READMORE
 
@@ -37,22 +37,22 @@ Episodes: 1 to 10  | home | search {search terms} | next | back | exit
 >
 ```
 
-Since previous projects were largely test driven, the structure of the code was mostly already determined.  The real challenge of the RetroCasts project is how to structure the code.  How to identify objects of modules and classes, what methods to include in each, how they should interact.  
+Since previous projects were largely test driven, the structure of the code was mostly already determined.  The real challenge of the RetroCasts project is how to structure the code into modules and classes, and determining how those objects should interact.
 
 The project requires the development of a Ruby program that will scrape a website or pull data from a public api, and then present that information through a cli to the user.  Optionally the project could be created as a gem to be hosted on RubyGems.  
 
-When I read the requirements for the project two things came to mind.  First, if I'm going to be creating a gem, it should be something that I would find useful, and perhaps other people too.  Second, it should be built as test driven as possible. 
+When I read the requirements for the project two things came to mind.  First, if I'm going to be creating a gem, it should be something that I would find useful, and perhaps other would people too.  Second, it should be built as test driven as possible. 
 
-As mentioned, all of the labs at Learn.co are test driven in the sense that each lab has a series of pre-written tests and the students are responsible for writing code that passes the tests.  We gain familiarity with TTD by understanding the test suite output and by reading the tests for better understanding.  However, we are not writing the tests.  
+As mentioned, all of the labs at Learn.co are test driven in the sense that each lab has a series of pre-written tests and the students are responsible for writing code that passes the tests.  We gain familiarity with TDD by understanding the test suite output and by reading the tests for better understanding.  However, we are not writing the tests.  
 
-I had completed a Ruby on Rails app in grad school called QuestionFair.com [[Website](http://questionfair.com)] [[GitHub](https://github.com/snsavage/QuestionFair)].  For that project, I had tried to use TDD, but I was so new to web development that hardly knew where to begin.  Dealing with the added complexity of Rails and my limited knowledge of Ruby, I quickly abandoned TDD.  However, I learned a lesson from the project.  Tests are important!!!  As the project grew in complexity manually testing became increasingly more difficult.  
+I had completed a Ruby on Rails app in grad school called QuestionFair.com [[Website](http://questionfair.com)] [[GitHub](https://github.com/snsavage/QuestionFair)].  For that project, I had tried to use TDD, but I was so new to web development I hardly knew where to begin.  Dealing with the added complexity of Rails and my limited knowledge of Ruby, I quickly abandoned TDD.  However, I learned a lesson from the project.  Tests are important!!!  As the project grew in complexity, manually testing became increasingly more difficult.  
 
-Since RSpec is so widely used in the Ruby on Rails community and also the test suite used in the Learn.co labs, I choose RSpec for my testing framework.  I choose RailsCasts.com as the site to scrape.  RailsCasts is a great resource, even though the newest episode is from 2013.  It was invaluable while I was working on QuestionFair and I still continue to reference the material when I want to see a quick overview on a topic.  
+Since RSpec is so widely used in the Ruby on Rails community and is also the test suite used in the Learn.co labs, I chose RSpec for my testing framework.  I chose RailsCasts.com as the site to scrape.  RailsCasts is a great resource, even though the newest episode is from 2013.  It was invaluable while I was working on QuestionFair and I still continue to reference the material when I want to see a quick overview on a topic.  
 
 ## Creating a Project Skeleton
 Since I wanted to create a Ruby gem from this project, a few things needed to be setup to create a gem skeleton.  Fortunately, Bundler has the ```bundler gem``` command.  This worked out really well by providing all of the files and folders required to build a gem.  You can find the docs [here](http://bundler.io/v1.13/man/bundle-gem.1.html).
 
-```bundle gem``` also provides a numbers of helpful utilities.  For instance, the ```bin/console``` script launches ```irb``` or ```pry``` with the project's code preloaded.  Also, two ```rake``` commands are provided, ```build``` and ```install```, that will build and install the gem on your local machine.  The framework will also sets up the test suite and provides a ```.gemspec``` template.
+```bundle gem``` also provides a number of helpful utilities.  For instance, the ```bin/console``` script launches ```irb``` or ```pry``` with the project's code preloaded.  Also, two ```rake``` commands are provided, ```build``` and ```install```, that will build and install the gem on your local machine.  The framework also sets up the test suite and provides a ```.gemspec``` template.
 
 Here is the file structure provided by ```bundle gem``` at the start of the RetroCasts project. 
 
@@ -86,7 +86,7 @@ One area that I've neglected until now was understanding what makes a good Git c
 
 I think the best tip he provides is to write commit messages as if you were completing the sentence, "If applied, this commit will...".  This single tip has gone a long way to improving my messages.  Additionally, the post has great advice on how to format messages.  
 
-I hadn't realized in the past, although I had heard people discuss it, that commit messages could be multiple lines long.  I had only ever used the ```-m``` flag for writing a message at the command prompt.  As it turns out, something was wrong with my Git and Bash setup that prevented the commit message from opening properly in my text editor.  Instead I would just get a blank Vim buffer.  Getting this problem fixed opened up an entire new world of Git!
+I hadn't realized in the past, although I had heard people discuss it, that commit messages could be multiple lines long.  I had only ever used the ```-m``` flag for writing a message at the command prompt.  As it turns out, something was wrong with my Git and Bash setup that prevented the commit message from opening properly in my text editor.  Instead I would just get a blank Vim buffer.  Getting this problem fixed opened up an entirely new world of Git!
 
 Here is a sample of my nicely formatted commit messages...
 
@@ -142,15 +142,15 @@ describe RetroCasts::RailsCasts, vcr: vcr_default do
 end      
 ```
 
-As this writing this post, the project has 75% test coverage.  The biggest gap is in the code that controls the user-facing cli.  This code remains untested because manually testing the code was straightforward and due to time constraints with the project.  Unsurprisingly, this section of code is also the least organized. 
+As of writing this post, the project has 75% test coverage.  The biggest gap is in the code that controls the user-facing cli.  This code remains untested because manually testing the code was straightforward and due to time constraints with the project.  Unsurprisingly, this section of code is also the least organized. 
 
-One problem that I had early on when with testing was a slow test suite caused by the number of HTTP request made to the RailsCasts website.  To fix this problem, I added [VCR](https://github.com/vcr/vcr) gem.  VCR records HTTP calls from the test suite and then plays back those recordings each time the test suite runs.  Essentially, the gem saves a copy of the webpage and then it intercepts the HTTP calls by responding with the saved page.  This trick greatly improved the test suite speed.   
+One problem that I had early on with testing was a slow test suite caused by the number of HTTP request made to the RailsCasts website.  To fix this problem, I added [VCR](https://github.com/vcr/vcr) gem.  VCR records HTTP calls from the test suite and then plays back those recordings each time the test suite runs.  Essentially, the gem saves a copy of the webpage and then it intercepts the HTTP calls by responding with the saved page.  This trick greatly improved the test suite speed.   
 
 Overall, I'm happy with the TDD approach.  Having the tests definitely helped me think through each problem the code is solving.  Additionally, it's a very efficient way to interact with your code, as opposed to manually testing everything in a Ruby console.       
 
 ## Code Structure
 
-One of the biggest challenges faced during the RetroCasts project, was how to best structure the code.  Even though I was primarily writing tests first, I quickly found that I needed to be thinking a little bit farther ahead about how my code should interact.  On a number of occasions code was moved from one class to another or modules were turned into classes. 
+One of the biggest challenges faced during the RetroCasts project, was how to best structure the code.  Even though I was primarily writing tests first, I quickly found that I needed to be thinking a little bit further ahead about how my code should interact.  On a number of occasions code was moved from one class to another or modules were turned into classes. 
 
 I was also trying to work with some thought toward future expansion of the project.  In particular, how I could easily add additional data sources.  This idea influenced many of my design choices.   
 
@@ -162,7 +162,7 @@ The ```RailsCasts``` class handles anything specific to the RailsCasts site.  Mu
 
 One choice with the ```RailsCasts``` class was how to handle changes of state in a class instance when requesting a new page from RailCasts.com.  These updates occur with searching and changing pages.  Instead of changing all of the internal instance variables I chose to instead return a new instance of the class.  
 
-For instance, as shown below, the ```#get_search``` method in ```RailsCasts``` simply creates a new class instance by calling ```#new``` with different parameters.  I choose this method because ```#new``` was already setup to handle processing a search request.  This method simplified the overall code for the class, but in the future I might change this to a more traditional object-oriented approach.  
+For instance, as shown below, the ```#get_search``` method in ```RailsCasts``` simply creates a new class instance by calling ```#new``` with different parameters.  I chose this method because ```#new``` was already setup to handle processing a search request.  This method simplified the overall code for the class, but in the future I might change this to a more traditional object-oriented approach.  
 
 ```ruby
 def get_search(search_term)
@@ -173,7 +173,7 @@ end
 ## Going Forward
 Overall I'm happy with RetroCasts.  The cli does a great job of providing a quick method for searching the RailCasts website through the command line.  
 
-There are a few areas for improvement.  First, the cli code should be tested and divided into separate methods.  Second, the overall testing should be double checked for missing or uneeded tests.  Finally, I would like to update the cli to handle multiple sources.  Any suggestions for other source would be greatly appreciated!
+There are a few areas for improvement.  First, the cli code should be tested and divided into separate methods.  Second, the overall testing should be double checked for missing or uneeded tests.  Finally, I would like to update the cli to handle multiple sources.  Any suggestions for other sources would be greatly appreciated!
 
 *This is a blog post for the Flatiron School's Online Web Developer program.  You can find more information here: [learn.co/with/snavage](http://learn.co/with/snavage).*
    
