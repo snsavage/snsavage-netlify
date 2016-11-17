@@ -1,0 +1,19 @@
+---
+:id: 5PmS29jGkosq2Yc4McWWMw
+:name: QuestionFair.com
+:releaseDate: !ruby/object:DateTime 2015-03-31 00:00:00.000000000 Z
+:description: |-
+  QuestionFair.com is a website for asking questions and getting answers. The website includes a few more advanced features including location tagging, points rewards and friendships with other users.
+
+  QuestionFair.com was originally created as a final academic project for completion of a Master's degree in Information Systems. QuestionFair was built using the Ruby on Rails website framework. The site was launched March 2015, but is currently dormant and undergoing improvement for a future relaunch.
+:image:
+- :title: QuestionFair
+  :description: 
+  :url: "//images.contentful.com/uvpiph8ym0lw/5OMMvShI2IkEqIIoAAUOwU/2d69cd988bc83ace99d9cc3d000b42a1/QuestionFair.png"
+:links:
+- :id: 5aPOTAV8eciQeKuIC4cEoE
+  :name: QuestionFair.com
+  :url: https://www.questionfair.com
+- :id: 3qnmjI5yNaawWwuSmCAGuq
+  :name: GitHub
+  :url: https://github.com/snsavage/QuestionFair

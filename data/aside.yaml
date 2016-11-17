@@ -2,4 +2,5 @@ exclude:
   - about.html
   - contact.html
   - thank-you.html
+  - portfolio.html
 

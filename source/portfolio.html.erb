@@ -1,0 +1,34 @@
+<div class="portfolio">
+  <% data.portfolio.project.each do |id, portfolio| %>
+    <div class="project">
+
+      <h2><%= portfolio["name"] %></h2>
+
+      <% if portfolio.image %>
+        <% portfolio.image.each do |image| %>
+          <%= tag :img, :src => image.url,
+            :title => image.title,
+            :alt => image.title %>
+        <% end %>
+      <% end %>
+
+      <div class="project-description">
+        <p><%= portfolio["description"] %></p>
+
+        <div class="project-links">
+          <h4>Find Out More:</h4>
+          <% if portfolio.links %>
+            <% portfolio.links.each do |link| %>
+              <%= link_to link.name, link.url %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+  <% if data.portfolio.project.count.odd? %>
+    <div class="project last">
+    </div>
+  <% end %>
+</div>

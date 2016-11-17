@@ -835,8 +835,50 @@ button:active {
   }
 }
 
+.portfolio {
+  margin: 1em 0em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: strech;
+  width: 100%;
+}
 
+.project {
+  width: 40%;
+  flex-grow: 1;
+  margin: 0.5em;
+  padding: 1em;
+  border-radius: 3px;
+  border: 1px solid $footer-background-color;
 
+  * {
+    margin: 0.5em 0;
+    text-align: left;
+  }
+
+  img {
+    width: 100%;
+    border: 1px solid $footer-background-color;
+  }
+}
+
+.project-links {
+  h4, a {
+    display: inline;
+  }
+}
+
+.last {
+  border: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .project {
+    width: 100%;
+  }
+}
 
 
 
