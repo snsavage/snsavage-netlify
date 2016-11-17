@@ -19,3 +19,6 @@
 
 # Ignore ENV
 .env
+
+# Contentful Hashes
+.portfolio-space-hash
