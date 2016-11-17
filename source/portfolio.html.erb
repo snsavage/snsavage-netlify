@@ -1,11 +1,11 @@
 <div class="portfolio">
-  <% data.portfolio.project.each do |id, portfolio| %>
+  <% data.portfolio.project.each do |id, project| %>
     <div class="project">
 
-      <h2><%= portfolio["name"] %></h2>
+      <h2><%= project["name"] %></h2>
 
-      <% if portfolio.image %>
-        <% portfolio.image.each do |image| %>
+      <% if project.image %>
+        <% project.image.each do |image| %>
           <%= tag :img, :src => image.url,
             :title => image.title,
             :alt => image.title %>
@@ -13,12 +13,12 @@
       <% end %>
 
       <div class="project-description">
-        <p><%= portfolio["description"] %></p>
+        <p><%= project["description"] %></p>
 
         <div class="project-links">
           <h4>Find Out More:</h4>
-          <% if portfolio.links %>
-            <% portfolio.links.each do |link| %>
+          <% if project.links %>
+            <% project.links.each do |link| %>
               <%= link_to link.name, link.url %>
             <% end %>
           <% end %>
