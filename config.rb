@@ -110,7 +110,7 @@ end
 set :markdown_engine, :redcarpet
 
 activate :syntax, :line_numbers => true
-set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :markdown, :fenced_code_blocks => true, :smartypants => true, :footnotes => true
 
 activate :google_analytics do |ga|
     ga.tracking_id = 'UA-82742395-1'
