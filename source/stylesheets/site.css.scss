@@ -520,6 +520,13 @@ article h2 {
   font-size: 1.50em;
 }
 
+article ul {
+  font-family: $serif-font;
+  font-size: 1em;
+  font-weight: 300;
+  color: $paragraph-text-color;
+}
+
 @media only screen and (max-width: 750px) {
   .article-title {
     display: block;
