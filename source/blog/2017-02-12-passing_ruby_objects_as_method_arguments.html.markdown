@@ -7,7 +7,7 @@ published: true
 ---
 
 One part of the Ruby language has tripped me up on several occasions.  In Ruby,
-passing an object (i.e. just about everything in Ruby) as an argument to a
+passing an object \(i.e. just about everything in Ruby\) as an argument to a
 method gives you a reference to that object.  Therefore changes to the object
 inside of the method are reflected on the original object.
 
@@ -40,7 +40,7 @@ method.
 
 ```ruby
 def modify_array(arr)
-  array << c"
+  array << "c"
 end
 ```
 
@@ -117,8 +117,7 @@ end
 ```
 
 In ```#dup_assign_array```, when assigning the array to new_array, I've used the
-```#dup``` [^1] method.  You can see that the object ids change when using
-```#dup```.
+```#dup``` [^1] method.  You can see that the object ids change when using ```#dup```.
 
 If I then pass the original ```test_array``` into ```#modify_array``` and call
 ```#dup```, ```test_array``` will not be modified, but a new ```return_array```
@@ -174,9 +173,9 @@ places that reference the object.
 
 Please direct comments and questions [here](https://www.snsavage.com/contact.html).
 
-[^1]: [https://ruby-doc.org/core-2.4.0/Object.html#method-i-dup](https://ruby-doc.org/core-2.4.0/Object.html#method-i-dup)
+[^1]: [Ruby's #dup Documentation](https://ruby-doc.org/core-2.4.0/Object.html#method-i-dup)
 
-[^2]: [https://ruby-doc.org/core-2.4.0/Object.html#method-i-freeze](https://ruby-doc.org/core-2.4.0/Object.html#method-i-freeze)
+[^2]: [Ruby's #freeze Documentation](https://ruby-doc.org/core-2.4.0/Object.html#method-i-freeze)
 
 [^3]: [The Well-Grounded Rubyist, Second Edition, By: David A. Black, Page:59](https://www.manning.com/books/the-well-grounded-rubyist-second-edition)
 
