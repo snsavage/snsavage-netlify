@@ -58,7 +58,7 @@ method takes an array as an argument and then adds an element onto the array.
 => ["a", "b", "c"]
 2.3.1 :006 > test_array.object_id
 => 70334666661200
- ```
+```
 
 Using ```#modify_array``` shows that the original array will be modified inside
 of the method.  The object ids show no change indicating that the original
@@ -117,7 +117,7 @@ end
 ```
 
 In ```#dup_assign_array```, when assigning the array to new_array, I've used the
-```#dup```[^1] method.  You can see that the object ids change when using
+```#dup``` [^1] method.  You can see that the object ids change when using
 ```#dup```.
 
 If I then pass the original ```test_array``` into ```#modify_array``` and call
@@ -131,7 +131,7 @@ will be created with the modification and a new object id.
 => ["z", "b"]
 2.3.1 :010 > return_array
 => ["z", "b", "c"]
- ```
+```
 
 It's important to note that ```#dup``` will create a duplicate copy of an
 object, but not any objects referenced by that object.  In the above example,
@@ -142,7 +142,7 @@ reflected in both arrays.
 
 ```#clone``` is similar to ```#dup``` with some important distinctions.  First,
 with ```#dup```, "any modules that the object has been extended with will not be
-copied"[^2].  So, ```#dup``` will not create an exact copy.
+copied" [^2].  So, ```#dup``` will not create an exact copy.
 
 ```ruby
 2.3.1 :011 > test_array = ["a", "b"]
@@ -164,17 +164,15 @@ still be modified.  When a frozen object is cloned, the cloned object will still
 be frozen.  A duplicated object will not be frozen [^3].
 
 *As a side note, the Ruby documentation for ```#freeze``` indicates that
-"[o]bjects of the following classes are always frozen: Integer, Float,
-Symbol."[^2].  I think that this caused some of my initial confusion.*
+"objects of the following classes are always frozen: Integer, Float,
+Symbol." [^2].  I think that this caused some of my initial confusion.*
 
 I hope this helps to clear up any confusion regarding how Ruby handles objects
 passed as arguments to methods.  Just remember, Ruby is passing objects by
 reference, so changes to an object in one place will also be seen in other
 places that reference the object.
 
-Please direct comments and questions
-[here](https://www.snsavage.com/contact.html).
-
+Please direct comments and questions [here](https://www.snsavage.com/contact.html).
 
 [^1]: [https://ruby-doc.org/core-2.4.0/Object.html#method-i-dup](https://ruby-doc.org/core-2.4.0/Object.html#method-i-dup)
 
