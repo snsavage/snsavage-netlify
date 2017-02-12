@@ -3,7 +3,7 @@ title: Passing Ruby Objects as Method Arguments
 date: 2017-02-12 15:15 UTC
 author: Scott Savage
 tags: flatiron school, ruby
-published: false
+published: true
 ---
 
 One part of the Ruby language has tripped me up on several occasions.  In Ruby, passing an object (i.e. just about everything in Ruby) as an argument to a method gives you a reference to that object.  Therefore changes to the object inside of the method are reflected on the original object.
