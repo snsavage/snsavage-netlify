@@ -39,7 +39,7 @@ the object inside of the method matches the string defined outside of the
 method.
 
 ```ruby
-def modify_array(arr)
+def modify_array(array)
   array << "c"
 end
 ```
