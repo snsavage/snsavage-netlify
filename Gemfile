@@ -23,4 +23,5 @@ gem "contentful_middleman",
 
 gem 'middleman-pry'
 
+ruby "2.3.1"
 
