@@ -1,3 +1,5 @@
+require 'net/http'
+
 module SocialHelpers
   def full_url(path)
     if build?
