@@ -1,0 +1,22 @@
+---
+:id: 6X6u7niSk0iSMMWiQWSGck
+:name: Photo Vistas
+:releaseDate: !ruby/object:DateTime 2016-12-21 00:00:00.000000000 Z
+:description: Photo Vistas uses the Unsplash API to provide your favorite Unsplash
+  photos in new browser tabs. Photo Vistas allows the user to create their own custom
+  photo queue and associated homepage bookmark. Photos are rotated daily at midnight.  Photo
+  Vistas is built with Ruby and the Sinatra web development framework.
+:image:
+- :title: PhotoVistas - Homepage
+  :description: 
+  :url: "//images.contentful.com/uvpiph8ym0lw/49lYgVwXNKggeOKgqkwCuG/eeff90ee0f272ffc0b08c71dd8694106/PhotoVistas_-_Homepage.png"
+:links:
+- :id: 19DAPzerhugMqsAUIoEQ4E
+  :name: snsavage.com
+  :url: https://www.snsavage.com/blog/2016/creating_photo_vistas_with_sinatra.html
+- :id: 6KQM6063v2UwWmkmUOUWks
+  :name: GitHub
+  :url: https://github.com/snsavage/photovistas
+- :id: 74CldsajhmoQicgU0QmEGG
+  :name: PhotoVistas.com
+  :url: https://photovistas.com

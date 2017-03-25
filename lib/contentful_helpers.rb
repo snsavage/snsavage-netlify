@@ -1,9 +1,11 @@
 module ContentfulHelpers
-  def projects
-    data.portfolio.project
+  def project_sort(projects)
+    projects.sort_by { |id, project| project.releaseDate }
   end
 
-  def odd?
-    data.portfolio.project.count.odd?
+  def sort_projects(projects)
+    projects.sort do |a, b|
+      b[1].releaseDate <=> a[1].releaseDate
+    end
   end
 end
