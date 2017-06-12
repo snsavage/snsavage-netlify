@@ -2,17 +2,18 @@
   <% sort_projects(data.portfolio.project).each do |id, project| %>
     <div class="project" id="<%= snake_case(project["name"]) %>">
 
-      <h2><%= project["name"] %></h2>
-
-      <% if project.image %>
-        <% project.image.each do |image| %>
-          <%= tag :img, :src => image.url,
-            :title => image.title,
-            :alt => image.title %>
+      <div class="project-image">
+        <% if project.image %>
+          <% project.image.each do |image| %>
+            <%= tag :img, :src => image.url,
+              :title => image.title,
+              :alt => image.title %>
+          <% end %>
         <% end %>
-      <% end %>
+      </div>
 
       <div class="project-description">
+        <h2><%= project["name"] %></h2>
         <p>Released: <%= project["releaseDate"].strftime('%B %e, %Y') %></p>
         <p><%= project["description"] %></p>
 

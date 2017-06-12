@@ -871,12 +871,30 @@ button:active {
 }
 
 .project {
-  width: 40%;
+  width: 100%;
   flex-grow: 1;
   margin: 0.5em;
-  padding: 1em;
   border-radius: 3px;
   border: 1px solid $footer-background-color;
+  display: flex;
+
+  .project-image {
+    margin: 1em;
+    width: 40%;
+
+    img {
+      margin: 0;
+    }
+  }
+
+  .project-description {
+    margin: 1em;
+    width: 60%;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
 
   * {
     margin: 0.5em 0;
@@ -902,6 +920,15 @@ button:active {
 @media only screen and (max-width: 700px) {
   .project {
     width: 100%;
+    flex-direction: column;
+
+    .project-image {
+      width: 95%;
+    }
+
+    .project-description {
+      width: 95%;
+    }
   }
 
   div.overview {
