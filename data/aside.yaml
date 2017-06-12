@@ -1,4 +1,5 @@
 exclude:
+  - index.html
   - about.html
   - contact.html
   - thank-you.html

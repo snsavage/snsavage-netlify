@@ -80,8 +80,10 @@ activate :livereload
 # end
 require "lib/social_helpers"
 require "lib/contentful_helpers"
+require "lib/snake_case"
 helpers SocialHelpers
 helpers ContentfulHelpers
+helpers SnakeCase
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
