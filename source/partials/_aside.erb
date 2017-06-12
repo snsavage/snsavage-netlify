@@ -6,11 +6,13 @@
 </ol>
 
 <h2>Tags</h2>
-<ol>
-  <% blog.tags.each do |tag, articles| %>
-    <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
-  <% end %>
-</ol>
+<div class="tags">
+  <ol>
+    <% blog.tags.each do |tag, articles| %>
+      <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
+    <% end %>
+  </ol>
+</div>
 
 <h2>By Year</h2>
 <ol>
