@@ -1,4 +1,5 @@
-<li><%= link_to "Home", "/" %></li>
-<li><%= link_to "About", "/about.html" %></li>
-<li><%= link_to "Portfolio", "/portfolio.html" %></li>
-<li><%= link_to "Contact", "/contact.html" %></li>
+<% data.nav_bar.each do |title, link| %>
+  <li <%= current_page.path == link ? "class='selected'" : "" %> >
+    <%= link_to title, "/#{link}" %>
+  </li>
+<% end %>

@@ -257,6 +257,11 @@ nav h1 a:visited {
   color: $nav-bar-color;
 }
 
+nav li.selected a {
+  text-decoration: underline;
+  font-weight: 800;
+}
+
 p {
   font-family: $serif-font;
   font-size: 1.0em;
