@@ -122,3 +122,5 @@ activate :google_analytics do |ga|
 end
 
 activate :pry
+
+proxy "_redirects", "netlify-redirects", ignore: true
