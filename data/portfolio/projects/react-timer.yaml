@@ -1,0 +1,14 @@
+---
+:name: React Timer
+:releaseDate: !ruby/object:DateTime 2017-09-05 00:00:00.000000000 Z
+:description: |-
+  Interactive interval timer.  Users can create and play through custom timer routines.  React Timer is built with React, Redux and Ruby on Rails.
+:image:
+- :title: React Timer
+  :description: React Timer
+  :url: "/images/react-timer-screenshot.png"
+:links:
+- :name: Article
+  :url: https://www.snsavage.com/blog/2017/creating-react-timer.html
+- :name: GitHub
+  :url: https://github.com/snsavage/timer-react

@@ -17,10 +17,6 @@ gem 'middleman-dotenv', '~> 2.0'
 
 gem 'middleman-google-analytics', '~> 2.1'
 
-gem "contentful_middleman", 
-  :git => 'https://github.com/contentful/contentful_middleman.git',
-  :branch => 'dl/upgrade-to-v4'
-
 gem 'middleman-pry'
 
 ruby "2.3.1"

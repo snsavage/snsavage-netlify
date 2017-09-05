@@ -23,7 +23,7 @@
 <div class="recent">
 <h2>Recent Portfolio Projects</h2>
   <ul>
-    <% sort_projects(data.portfolio.project)[0...5].each do |id, project| %>
+    <% sort_projects(data.portfolio.projects)[0...5].each do |id, project| %>
       <li>
         <%= link_to project["name"],
           "/portfolio.html##{snake_case(project['name'])}" %> - 

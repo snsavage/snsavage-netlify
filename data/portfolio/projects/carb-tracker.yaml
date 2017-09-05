@@ -1,5 +1,4 @@
 ---
-:id: 2s7kGq3PiM2qSaC8gieY4g
 :name: Carb Tracker
 :releaseDate: !ruby/object:DateTime 2017-03-12 00:00:00.000000000 Z
 :description: |-
@@ -9,14 +8,13 @@
 :image:
 - :title: Carb Tracker
   :description: Carb Tracker
-  :url: "//images.contentful.com/uvpiph8ym0lw/6BWxe6ibXasQMAucQmCumA/b48a38d0f45419a9c0dee22f416bd0f7/carb-tracker-homepage.png"
+  :url: "/images/carb-tracker-homepage.png"
 :links:
-- :id: 1rmCn5xpq82GseY4i6QIAE
-  :name: snsavage.com
-  :url: https://www.snsavage.com/blog/2017/creatingcarbtrackerwithrubyonrails.html
-- :id: zRzF2aE2cKW2wkW8eEE4m
-  :name: GitHub
+- :name: Article (Rails & JavaScript Version)
+  :url: https://www.snsavage.com/blog/2017/adding-javascript-and-jquery-user-interactions-to-carb-tracker.html
+- :name: Article (Rails Only Version)
+  :url: https://www.snsavage.com/blog/2017/creating-carb-tracker-with-ruby-on-rails.html
+- :name: GitHub
   :url: https://github.com/snsavage/carb_tracker
-- :id: 6PMg1A8H5esiosoeIOgIQC
-  :name: Live Demo
+- :name: Live Demo
   :url: https://carbtracker.herokuapp.com

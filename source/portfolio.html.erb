@@ -1,5 +1,5 @@
 <div class="portfolio">
-  <% sort_projects(data.portfolio.project).each do |id, project| %>
+  <% sort_projects(data.portfolio.projects).each do |id, project| %>
     <div class="project" id="<%= snake_case(project["name"]) %>">
 
       <div class="project-image">
