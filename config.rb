@@ -121,11 +121,4 @@ activate :google_analytics do |ga|
     ga.development = false
 end
 
-activate :contentful do |f|
-  f.access_token = ENV['CONTENTFUL_API_TOKEN']
-  f.space = {portfolio: ENV['CONTENTFUL_SPACE_TOKEN']}
-  f.content_types = {project: "portfolio"}
-  f.cda_query = {content_type: "portfolio", include: 1, order: "fields.releaseDate"}
-end
-
 activate :pry
