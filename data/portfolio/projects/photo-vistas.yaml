@@ -6,8 +6,8 @@
   photo queue and associated homepage bookmark. Photos are rotated daily at midnight.  Photo
   Vistas is built with Ruby and the Sinatra web development framework.
 :image:
-- :title: PhotoVistas - Homepage
-  :description: 
+- :title: PhotoVistas
+  :description: PhotoVistas
   :url: "/images/pv-homepage.png"
 :links:
 - :name: Article
@@ -16,3 +16,8 @@
   :url: https://github.com/snsavage/photovistas
 - :name: PhotoVistas.com
   :url: https://photovistas.com
+:videos:
+- :title: "Photo Vistas Intro"
+  :width: 560
+  :height: 315
+  :url: "https://www.youtube.com/embed/Myvf7BSF5Ng"

@@ -18,3 +18,12 @@
   :url: https://github.com/snsavage/carb_tracker
 - :name: Live Demo
   :url: https://carbtracker.herokuapp.com
+:videos:
+- :title: "Carb Tracker JavaScript Updates"
+  :width: 560
+  :height: 315
+  :url: "https://www.youtube.com/embed/JI3x5DD5I78"
+- :title: "Carb Tracker Intro"
+  :width: 560
+  :height: 315
+  :url: "https://www.youtube.com/embed/h5gmU7PdAqg"

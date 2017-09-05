@@ -880,16 +880,21 @@ button:active {
 
   .project-image {
     margin: 1em;
-    width: 40%;
+    width: 60%;
 
     img {
       margin: 0;
     }
   }
 
-  .project-description {
+  .project-videos {
     margin: 1em;
     width: 60%;
+  }
+
+  .project-description {
+    margin: 1em;
+    width: 40%;
 
     h2 {
       margin-top: 0;
@@ -923,6 +928,10 @@ button:active {
     flex-direction: column;
 
     .project-image {
+      width: 95%;
+    }
+
+    .project-videos {
       width: 95%;
     }
 
@@ -976,6 +985,23 @@ div.pagination {
   p {
     font-family: $sans-font;
     display: inline;
+  }
+}
+
+.video-wrapper {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
+  position: relative;
+
+  embed,
+  object,
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
   }
 }
 

@@ -2,15 +2,33 @@
   <% sort_projects(data.portfolio.projects).each do |id, project| %>
     <div class="project" id="<%= snake_case(project["name"]) %>">
 
-      <div class="project-image">
-        <% if project.image %>
-          <% project.image.each do |image| %>
-            <%= tag :img, :src => image.url,
-              :title => image.title,
-              :alt => image.title %>
+      <% if project.videos %>
+        <div class="project-videos">
+          <% project.videos.take(1).each do |video| %>
+            <div class="video">
+              <div class="video-wrapper">
+                <iframe
+                  <%# height=<%= video.height %1> %>
+                  <%# width=<%= video.width %1> %>
+                  src=<%= video.url %>
+                  frameborder="0"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
           <% end %>
-        <% end %>
-      </div>
+        </div>
+      <% elsif project.image %>
+        <div class="project-image">
+          <% if project.image %>
+            <% project.image.each do |image| %>
+              <%= tag :img, :src => image.url,
+                :title => image.title,
+                :alt => image.title %>
+            <% end %>
+          <% end %>
+        </div>
+      <% end %>
 
       <div class="project-description">
         <h2><%= project["name"] %></h2>
@@ -20,11 +38,14 @@
         <div class="project-links">
           <h4>Find Out More:</h4>
           <% if project.links %>
-            <% project.links.each do |link| %>
-              <%= link_to link.name, link.url %>
-            <% end %>
+            <ul>
+              <% project.links.each do |link| %>
+                <li><%= link_to link.name, link.url %></li>
+              <% end %>
+            </ul>
           <% end %>
         </div>
+
       </div>
     </div>
   <% end %>

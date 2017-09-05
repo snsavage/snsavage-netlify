@@ -12,3 +12,8 @@
   :url: https://www.snsavage.com/blog/2017/creating-react-timer.html
 - :name: GitHub
   :url: https://github.com/snsavage/timer-react
+:videos:
+- :title: React Timer Intro
+  :width: 560
+  :height: 315
+  :url: "https://www.youtube.com/embed/GBg4PASPo-Q"
