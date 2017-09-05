@@ -968,4 +968,14 @@ div.overview {
   }
 }
 
+div.pagination {
+  padding: 1em 0.5em 0;
+  margin-bottom: -1em;
+  text-align: right;
+
+  p {
+    font-family: $sans-font;
+    display: inline;
+  }
+}
 
