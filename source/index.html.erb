@@ -7,7 +7,7 @@
 
   <div class="overview-text">
     <h1>Scott Savage</h1>
-    <h2><em>Full Stack Web Developer</em></h2>
+    <h2><em>Software Developer</em></h2>
 
     <p><strong>Technical Skills:</strong> HTML, CSS, SQL, Ruby, Sinatra, Ruby on
     Rails, JavaScript, jQuery, RSpec, R, VBA, Test Driven Development</p>
@@ -40,7 +40,7 @@
 <div class="recent">
   <h2>Recent Articles</h2>
   <ol>
-    <% blog.articles[0...10].each do |article| %>
+    <% blog.articles[0...5].each do |article| %>
       <li><%= link_to article.title, article %> - 
         <span><%= article.date.strftime('%b %e') %></span>
       </li>
