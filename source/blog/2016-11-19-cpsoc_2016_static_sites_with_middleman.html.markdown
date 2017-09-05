@@ -7,7 +7,7 @@ author: Scott Savage
 published: true
 ---
 
-![Static Sites with Middleman](/images/cposc_2016_middleman.png "Static Sites
+![Static Sites with Middleman](/images/cposc-2016-middleman.png "Static Sites
 with Middleman")
 
 In November 2016 I gave a talk at the [Central Pennsylvania Open Source

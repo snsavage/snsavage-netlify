@@ -6,7 +6,7 @@ author: Scott Savage
 published: true
 ---
 
-![Static Sites with Middleman](/images/static_sites_with_middleman.png "Static
+![Static Sites with Middleman](/images/static-sites-with-middleman.png "Static
 Sites with Middleman")
 
 In August 2016 I gave a talk at the [Lancaster Front-End
