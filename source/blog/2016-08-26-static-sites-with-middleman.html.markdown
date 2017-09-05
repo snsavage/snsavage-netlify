@@ -19,5 +19,5 @@ The talk covered some background on static
 sites and static site generators, and then discussed why and when you might want
 to use them.  The talk then covered the basics of Middleman.  
 
-The presentation slides can be found [here](./Static Sites with Middleman.pdf).
+The presentation slides can be found [here](/assets/static-sites-with-middleman.pdf).
 

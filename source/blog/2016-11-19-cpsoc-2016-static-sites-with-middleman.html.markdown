@@ -19,6 +19,6 @@ The talk starts with a discussion of the basics of static sites and static site
 generators, then covers the Middleman static generator, and ends with an example
 workflow that works for both developers and non-technical users.  
 
-The presentation slides can be found [here](./cposc_2016_middleman.pdf).
+The presentation slides can be found [here](/assets/cposc-2016-middleman.pdf).
 
 
