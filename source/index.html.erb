@@ -21,23 +21,6 @@
 </div>
 
 <div class="recent">
-<h2>Recent Portfolio Projects</h2>
-  <ul>
-    <% sort_projects(data.portfolio.projects)[0...5].each do |id, project| %>
-      <li>
-        <%= link_to project["name"],
-          "/portfolio.html##{snake_case(project['name'])}" %> - 
-        <span><%= project["releaseDate"].strftime('%b %e') %></span>
-      </li>
-    <% end %>
-  </ul>
-  <p><%= link_to "View All Portfolio Projects", "/portfolio.html" %></p>
-</div>
-
-
-
-
-<div class="recent">
   <h2>Recent Articles</h2>
   <ol>
     <% blog.articles[0...5].each do |article| %>
@@ -47,4 +30,26 @@
     <% end %>
   </ol>
   <p><%= link_to "View All Articles", "/blog.html" %></p>
+</div>
+
+<div class="recent">
+<h2>Recent Portfolio Projects</h2>
+  <div class="portfolio-summary">
+    <% sort_projects(data.portfolio.projects)[0...3].each do |id, project| %>
+      <div class="portfolio-summary-item">
+        <h2><%= project["name"] %></h2>
+        <p>
+          <strong>Released: </strong>
+          <%= project["releaseDate"].strftime('%B %e, %Y') %>
+        </p>
+        <div style="background-image: url(<%= project.image.first.url %>)" >
+        </div>
+        <p class="more-info">
+          <%= link_to "More Information",
+            "/portfolio.html##{snake_case(project['name'])}" %>
+        </p>
+      </div>
+    <% end %>
+  </div>
+  <p><%= link_to "View All Portfolio Projects", "/portfolio.html" %></p>
 </div>

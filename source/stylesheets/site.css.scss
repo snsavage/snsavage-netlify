@@ -68,6 +68,16 @@ a:active {
     width: 90%;
     margin: 0 auto;
   }
+
+  div.portfolio-summary {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    div.portfolio-summary-item {
+      width: 85%;
+    }
+  }
 }
 
 @media only screen and (min-width: 960px) {
@@ -446,7 +456,7 @@ footer {
 
   .left-footer li {
     display: inline-block;
-    margin: 1em 1em;
+    margin: 0.5em 0.5em;
   }
 
   .center-footer {
@@ -1005,3 +1015,46 @@ div.pagination {
   }
 }
 
+.portfolio-summary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+div.portfolio-summary-item {
+  margin: 0.5em;
+  padding: 0.5em;
+  flex: 1 1 33%;
+  border: 1px solid $footer-background-color;
+  border-radius: 3px;
+
+  div {
+    width: 100%;
+    height: 15em;
+    margin: 0.5em 0;
+    box-sizing: border-box;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid $footer-background-color;
+  }
+
+  h2 {
+    margin: 0 0 0.25em 0;
+  }
+
+  p {
+    margin-left: 0;
+    margin: 0;
+
+    strong {
+      font-weight: bold;
+    }
+  }
+
+  .more-info {
+    width: 100%;
+    text-align: right;
+  }
+}
