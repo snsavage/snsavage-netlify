@@ -136,6 +136,12 @@ p {
   color: $paragraph-text-color;
 }
 
+li {
+  font-family: $serif-font;
+  font-weight: 300;
+  color: $paragraph-text-color;
+}
+
 header {
   height: $nav-height;
   background-color: $nav-bar-background-color;

@@ -13,7 +13,8 @@ READMORE
 ## Deploying the Rails API
 The Rails side of the application is fairly straight forward.  I’ve always just deployed to Heroku’s free tier, which works well for these types of side projects.  Heroku has good instructions [here](https://devcenter.heroku.com/articles/getting-started-with-rails5).  
 
-The quick synopsis is to: 
+The quick synopsis is to:
+
 1. Create your Rails app.
 2. Check it into git.
 3. Setup PostgreSQL as your DB.
