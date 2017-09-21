@@ -55,6 +55,8 @@ Here is the final `/public/_redirects` file for my site:
 /*  /index.html  200
 ```
 
+When you create your `_redirects` file, Netlify has a [handy site to test your redirects](https://play.netlify.com/redirects).  Just copy in your `_redirects` file, click "Test rules", and the site will notify you of any problems.
+
 ## Conclusion
 
 I’ve been happy with this setup so far.  Getting this working was straightforward and I haven’t had any issues.  The code for this project can be found [here](https://github.com/snsavage/timer-react).  Please direct questions and comments [here](https://www.snsavage.com/contact).
