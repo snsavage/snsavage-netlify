@@ -1,5 +1,4 @@
 ---
-title: cpsoc_2016_static_sites_with_middleman
 title: CPOSC 2016 - Static Sites with Middleman
 date: 2016-11-19 17:29 UTC
 tags: middleman, CPOSC, CPOSC 2016, talks, presentations, static sites
