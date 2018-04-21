@@ -2,7 +2,9 @@
 title: How to Deploy a React App with API Request Proxying
 date: 2017-09-21 19:07 UTC
 author: Scott Savage
-tags: react, ruby on rails
+tags:
+  - react
+  - ruby on rails
 published: true
 ---
 

@@ -12,6 +12,8 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     extension: "markdown"
     create: true # Allow users to create new documents in this collection
+    format: "yaml-frontmatter"
+    frontmatter-delimiter: "---"
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Author", name: "author", widget: "string"}
