@@ -1,7 +1,11 @@
 ---
 title: Static Sites with Middleman
 date: 2016-08-26 18:32 UTC
-tags: middleman, talks, presentations, static sites
+tags:
+  - middleman
+  - talks
+  - presentations
+  - static sites
 author: Scott Savage
 published: true
 ---

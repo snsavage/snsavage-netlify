@@ -2,7 +2,10 @@
 title: Adding JavaScript and jQuery User Interactions to Carb Tracker
 date: 2017-05-03 19:18 UTC
 author: Scott Savage
-tags: flatiron school, learn.co, carb tracker
+tags:
+  - flatiron school
+  - learn.co
+  - carb tracker
 published: true
 ---
 

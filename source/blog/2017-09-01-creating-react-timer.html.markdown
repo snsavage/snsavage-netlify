@@ -2,7 +2,12 @@
 title: Creating React Timer with React, Redux, and Ruby on Rails
 date: 2017-09-01 20:15 UTC
 author: Scott Savage
-tags: flatiron school, learn.co, react, redux, ruby on rails
+tags:
+  - flatiron school
+  - learn.co
+  - react
+  - redux
+  - ruby on rails
 published: true
 ---
 

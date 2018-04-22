@@ -2,7 +2,11 @@
 title: Middleman Blog with GitHub Pages
 author: Scott Savage
 date: 2016-02-04 02:40 UTC
-tags: middleman, github, github pages, tutorial
+tags:
+  - middleman
+  - github
+  - github pages
+  - tutorial
 published: true
 ---
 

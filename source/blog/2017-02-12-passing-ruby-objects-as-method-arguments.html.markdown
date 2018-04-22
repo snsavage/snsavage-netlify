@@ -2,7 +2,9 @@
 title: Passing Ruby Objects as Method Arguments
 date: 2017-02-12 15:15 UTC
 author: Scott Savage
-tags: flatiron school, ruby
+tags:
+  - flatiron school
+  - ruby
 published: true
 ---
 

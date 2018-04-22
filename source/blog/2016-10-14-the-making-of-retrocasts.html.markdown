@@ -2,7 +2,10 @@
 title: The Making of RetroCasts
 date: 2016-10-14 19:33 UTC
 author: Scott Savage
-tags: flatiron school, learn.co, retrocasts
+tags:
+  - flatiron school
+  - learn.co
+  - retrocasts
 published: true
 
 ---

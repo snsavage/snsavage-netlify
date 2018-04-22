@@ -2,7 +2,9 @@
 title: My Path to Software Development
 date: 2016-08-25 20:59 UTC
 author: Scott Savage
-tags: flatiron school, learn.co
+tags:
+  - flatiron school
+  - learn.co
 published: true
 ---
 

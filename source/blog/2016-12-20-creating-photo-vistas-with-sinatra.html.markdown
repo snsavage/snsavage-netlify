@@ -2,7 +2,11 @@
 title: Creating Photo Vistas with Sinatra
 date: 2016-12-20 17:06 UTC
 author: Scott Savage
-tags: flatiron school, unsplash, learn.co, photo vistas
+tags:
+  - flatiron school
+  - unsplash
+  - learn.co
+  - photo vistas
 published: true
 ---
 

@@ -2,7 +2,10 @@
 title: Creating Carb Tracker with Ruby on Rails
 date: 2017-03-13 15:25 UTC
 author: Scott Savage
-tags: flatiron school, learn.co, carb tracker
+tags:
+  - flatiron school
+  - learn.co
+  - carb tracker
 published: true
 ---
 
