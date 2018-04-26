@@ -5,5 +5,6 @@ date: '2018-04-25 21:03 UTC'
 published: false
 tags:
   - tag: Test
+  - tag: Second Test
 ---
 Testing Netlify CMS.
