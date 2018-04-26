@@ -23,5 +23,3 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Tags"
         name: "tags"
         widget: "list"
-        fields:
-          - {label: Tag, name: tag, widget: "string"}
