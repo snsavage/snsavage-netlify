@@ -1,0 +1,15 @@
+title: Test
+releaseDate: 4/29/2018
+description: Test portfolio item.
+image:
+  title: Test Image
+  description: Test image descript
+  image: /images/cposc-2016-middleman.png
+links:
+  - name: snsavage.com
+    url: 'https://www.snsavage.com'
+videos:
+  height: 315
+  title: React Timer Intro
+  url: www.google.com
+  width: 560
