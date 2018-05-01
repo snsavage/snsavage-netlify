@@ -48,11 +48,11 @@
           <strong>Released: </strong>
           <%= project["releaseDate"].strftime('%B %e, %Y') %>
         </p>
-        <div style="background-image: url(<%= project.image.first.url %>)" >
+        <div style="background-image: url(<%= project.image["url"] %>)" >
         </div>
         <p class="more-info">
           <%= link_to "More Information",
-            "/portfolio.html##{snake_case(project['name'])}" %>
+            "/portfolio.html##{snake_case(project.title)}" %>
         </p>
       </div>
     <% end %>
