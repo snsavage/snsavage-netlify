@@ -1,29 +1,24 @@
----
-:name: Carb Tracker
-:releaseDate: !ruby/object:DateTime 2017-03-12 00:00:00.000000000 Z
-:description: |-
+title: Carb Tracker
+releaseDate: 2017-03-12
+description: |-
   Carb Tracker allows users to track their daily nutrition (carbohydrates, protein, and fat) as a way to reach health goals. Nutrition data is provided by the NutritionIx API.
 
   Carb Tracker is built with the Ruby on Rails web development framework.
-:image:
-- :title: Carb Tracker
-  :description: Carb Tracker
-  :url: "/images/carb-tracker-homepage.png"
-:links:
-- :name: Article (Rails & JavaScript Version)
-  :url: https://www.snsavage.com/blog/2017/adding-javascript-and-jquery-user-interactions-to-carb-tracker.html
-- :name: Article (Rails Only Version)
-  :url: https://www.snsavage.com/blog/2017/creating-carb-tracker-with-ruby-on-rails.html
-- :name: GitHub
-  :url: https://github.com/snsavage/carb_tracker
-- :name: Live Demo
-  :url: https://carbtracker.herokuapp.com
-:videos:
-- :title: "Carb Tracker JavaScript Updates"
-  :width: 560
-  :height: 315
-  :url: "https://www.youtube.com/embed/JI3x5DD5I78"
-- :title: "Carb Tracker Intro"
-  :width: 560
-  :height: 315
-  :url: "https://www.youtube.com/embed/h5gmU7PdAqg"
+image:
+  title: Carb Tracker
+  description: Carb Tracker
+  url: "/images/carb-tracker-homepage.png"
+links:
+- name: Article (Rails & JavaScript Version)
+  url: https://www.snsavage.com/blog/2017/adding-javascript-and-jquery-user-interactions-to-carb-tracker.html
+- name: Article (Rails Only Version)
+  url: https://www.snsavage.com/blog/2017/creating-carb-tracker-with-ruby-on-rails.html
+- name: GitHub
+  url: https://github.com/snsavage/carb_tracker
+- name: Live Demo
+  url: https://carbtracker.herokuapp.com
+videos:
+  title: "Carb Tracker JavaScript Updates"
+  width: 560
+  height: 315
+  url: "https://www.youtube.com/embed/JI3x5DD5I78"

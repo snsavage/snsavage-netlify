@@ -1,13 +1,12 @@
----
-:name: snsavage.com
-:releaseDate: !ruby/object:DateTime 2016-07-31 00:00:00.000000000 Z
-:description: Personal website created with the Middleman static website generator.
-:image:
-- :title: snsavage.com
-  :description: snsavage.com
-  :url: "/images/snsavage.png"
-:links:
-- :name: snsavage.com
-  :url: https://www.snsavage.com
-- :name: GitHub
-  :url: https://github.com/snsavage/snsavage-netlify
+title: snsavage.com
+releaseDate: 2016-07-31
+description: Personal website created with the Middleman static website generator.
+image:
+  title: snsavage.com
+  description: snsavage.com
+  url: "/images/snsavage.png"
+links:
+- name: snsavage.com
+  url: https://www.snsavage.com
+- name: GitHub
+  url: https://github.com/snsavage/snsavage-netlify

@@ -1,21 +1,20 @@
----
-:name: RetroCasts
-:releaseDate: !ruby/object:DateTime 2016-10-17 00:00:00.000000000 Z
-:description: RetroCasts provides a command-line interface for access to metdata from
+title: RetroCasts
+releaseDate: 2016-10-17
+description: RetroCasts provides a command-line interface for access to metdata from
   RailsCasts.com. Features include episode lists, episode details, and search.
-:image:
-- :title: RetroCasts
-  :description: RetroCasts
-  :url: "/images/retro-casts.png"
-:links:
-- :name: GitHub
-  :url: https://github.com/snsavage/retro_casts
-- :name: Article
-  :url: https://www.snsavage.com/blog/2016/the-making-of-retrocasts.html
-- :name: RubyGems
-  :url: https://rubygems.org/gems/retro_casts
-:videos:
-- :title: "RetroCasts Intro"
-  :width: 560
-  :height: 315
-  :url: "https://www.youtube.com/embed/gK9Vj631qJU"
+image:
+  title: RetroCasts
+  description: RetroCasts
+  url: "/images/retro-casts.png"
+links:
+- name: GitHub
+  url: https://github.com/snsavage/retro_casts
+- name: Article
+  url: https://www.snsavage.com/blog/2016/the-making-of-retrocasts.html
+- name: RubyGems
+  url: https://rubygems.org/gems/retro_casts
+videos:
+  title: "RetroCasts Intro"
+  width: 560
+  height: 315
+  url: "https://www.youtube.com/embed/gK9Vj631qJU"

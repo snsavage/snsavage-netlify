@@ -1,32 +1,25 @@
 <div class="portfolio">
   <% sort_projects(data.portfolio.projects).each do |id, project| %>
-    <div class="project" id="<%= snake_case(project["name"]) %>">
-
+    <div class="project" id="<%= snake_case(project.title) %>">
       <% if project.videos %>
         <div class="project-videos">
-          <% project.videos.take(1).each do |video| %>
-            <div class="video">
-              <div class="video-wrapper">
-                <iframe
-                  <%# height=<%= video.height %1> %>
-                  <%# width=<%= video.width %1> %>
-                  src=<%= video.url %>
-                  frameborder="0"
-                  allowfullscreen>
-                </iframe>
-              </div>
+          <div class="video">
+            <div class="video-wrapper">
+              <iframe
+                <%# height=<%= video.height %1> %>
+                <%# width=<%= video.width %1> %>
+                  src=<%= project.videos["url"] %>
+                frameborder="0"
+                allowfullscreen>
+              </iframe>
             </div>
-          <% end %>
+          </div>
         </div>
       <% elsif project.image %>
         <div class="project-image">
-          <% if project.image %>
-            <% project.image.each do |image| %>
-              <%= tag :img, :src => image.url,
-                :title => image.title,
-                :alt => image.title %>
-            <% end %>
-          <% end %>
+          <%= tag :img, :src => project.image["url"],
+            :title => project.image["title"],
+            :alt => project.image["title"] %>
         </div>
       <% end %>
 
