@@ -15,7 +15,7 @@ More information the original Carb Tracker project can be found [here](https://w
 
 READMORE
 
-![](../images/carb-tracker-homepage.png)
+![](carb-tracker-homepage.png)
 
 ## JavaScript Versions
 

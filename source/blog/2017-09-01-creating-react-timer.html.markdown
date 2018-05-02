@@ -15,14 +15,14 @@ I started the Flatiron School’s Online Web Developer program in March 2016.  S
 
 READMORE
 
-![](../images/react-timer-screenshot.png)
+![](react-timer-screenshot.png)
 
 ## Introduction
 The Flatiron School’s requirements for the project were to built a React based single-page application with a Ruby on Rails API backend.  My idea behind React Timer was to build a workout timer that could handle complex workout routines with groups of intervals that could be repeated.  As with most of my Flatiron School projects, the idea of this project was based on a specific personal need.  While I would still consider this project a work in progress, it still has all of the functionality that I need for it to be useful.  And I’ve very happy with the result!
 
 ## Thinking in React, and Redux
 
-![](../images/react-timer-thinking.jpg)
+![](react-timer-thinking.jpg)
 
 When I first started the project, I hadn’t yet built any projects with React, aside from labs in the React and Redux section of the program.  Development with React is significantly different in approach from backend development with Ruby on Rails or even front-end development with JavaScript and jQuery.  React itself is fairly straight forward.  To me the design patterns are what make it so powerful and what add the complexity.  However, adding Redux into the mix can complicate even more things.  This is definitely the simple, but not easy paradigm.      
 

@@ -38,7 +38,7 @@ My master's program required a final semester long project for graduation.  And 
 
 But there was a problem:  I had never done any back-end web development.  I didn't know the Ruby language or the Rails framework.  Only basic HTML and CSS was covered in any of my classes.  So I had to start at the basics by building a couple of simple projects and then build on that base.  I watched a lot of [RailsCasts](http://railscasts.com) and spent a lot of time googling.  I learned very quickly that web development can be extremely complicated (See: [Stuff Everybody Knows](https://www.youtube.com/watch?v=fjtn3KCi17Y)).  Slowly I worked through each feature and my site took shape.  Completing that project was one of the hardest things I've ever done.     
 
-![QuestionFair.com - Whiteboard Checklist](/images/question-fair-whiteboard.png "QuestionFair.com - Whiteboard Checklist")
+![QuestionFair.com - Whiteboard Checklist](question-fair-whiteboard.png "QuestionFair.com - Whiteboard Checklist")
 
 When I started the project, I didn't want to build a simple website.  I wanted something as complete as possible.  A site that was production ready.  I've included a picture of the whiteboard checklist.  Looking back it's hard to believe how big of a project I tackled.  The final project is at [QuestionFair.com](http://www.questionfair.com).  
 

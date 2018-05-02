@@ -16,7 +16,7 @@ Photo Vistas uses the Sinatra web development domain specific language (DSL).  T
 
 READMORE
 
-![](../images/pv-homepage.png)
+![](pv-homepage.png)
 
 ## Introduction
 

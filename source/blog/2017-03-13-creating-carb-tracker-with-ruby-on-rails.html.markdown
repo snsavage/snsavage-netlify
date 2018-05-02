@@ -15,7 +15,7 @@ Carb Tracker uses the Ruby on Rails web development framework.  The project was 
 
 READMORE
 
-![](../images/carb-tracker-homepage.png)
+![](carb-tracker-homepage.png)
 
 ## Introduction
 The original idea is simple.  Most followers of the Paleo Diet have likely come across [The Primal Blueprint](http://www.marksdailyapple.com) and the [Carbohydrate Curve](http://www.marksdailyapple.com/the-primal-carbohydrate-continuum/).  This idea is that to maintain or lose weight the focus should be on daily carbohydrate consumption.  For example, to maintain weight, daily carbohydrate consumption should range between 100 to 150 grams per day and to lose weight consumption should range between 50 to 100 grams per day.
@@ -137,7 +137,7 @@ end
 
 The form to create a recipe allows the user to create a recipe one of three ways.  Either by creating a new food, adding an exiting ingredient that is already in the database, or by searching for new foods from Nutrition Ix.  
 
-![](../images/carb-tracker-search.png)
+![](carb-tracker-search.png)
 
 Searching for new foods (shown above) was one of the first features added to this form.  Users can add their search terms and click on the search button.  This calls the API through the NutritionIx class discussed either, saves those foods to the database, and then renders the form.  
 
