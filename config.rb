@@ -87,7 +87,7 @@ helpers SnakeCase
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
-set :images_dir, 'images'
+set :images_dir, 'assets'
 
 # set :partials_dir, 'partials'
 
