@@ -4,7 +4,7 @@ description: Personal website created with the Middleman static website generato
 image:
   title: snsavage.com
   description: snsavage.com
-  url: "/images/snsavage.png"
+  url: "snsavage.png"
 links:
 - name: snsavage.com
   url: https://www.snsavage.com

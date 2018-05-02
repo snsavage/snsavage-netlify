@@ -8,7 +8,7 @@ description: QuestionFair.com is a website for asking questions and getting answ
 image:
   title: QuestionFair
   description:
-  url: "/images/question-fair.png"
+  url: "question-fair.png"
 links:
 - name: QuestionFair.com
   url: https://www.questionfair.com

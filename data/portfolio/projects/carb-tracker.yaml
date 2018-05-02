@@ -7,7 +7,7 @@ description: |-
 image:
   title: Carb Tracker
   description: Carb Tracker
-  url: "/images/carb-tracker-homepage.png"
+  url: "carb-tracker-homepage.png"
 links:
 - name: Article (Rails & JavaScript Version)
   url: https://www.snsavage.com/blog/2017/adding-javascript-and-jquery-user-interactions-to-carb-tracker.html

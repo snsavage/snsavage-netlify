@@ -43,12 +43,12 @@
   <div class="portfolio-summary">
     <% sort_projects(data.portfolio.projects)[0...3].each do |id, project| %>
       <div class="portfolio-summary-item">
-        <h2><%= project["name"] %></h2>
+        <h2><%= project["title"] %></h2>
         <p>
           <strong>Released: </strong>
           <%= project["releaseDate"].strftime('%B %e, %Y') %>
         </p>
-        <div style="background-image: url(<%= project.image["url"] %>)" >
+        <div style="background-image: url(<%= image_path(project.image["url"]) %>)" >
         </div>
         <p class="more-info">
           <%= link_to "More Information",

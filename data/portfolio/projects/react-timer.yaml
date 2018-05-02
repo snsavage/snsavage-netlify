@@ -5,7 +5,7 @@ description: |-
 image:
   title: React Timer
   description: React Timer
-  url: "/images/react-timer-screenshot.png"
+  url: "react-timer-screenshot.png"
 links:
 - name: Article
   url: https://www.snsavage.com/blog/2017/creating-react-timer.html

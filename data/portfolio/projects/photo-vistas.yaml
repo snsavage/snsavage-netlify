@@ -7,7 +7,7 @@ description: Photo Vistas uses the Unsplash API to provide your favorite Unsplas
 image:
   title: PhotoVistas
   description: PhotoVistas
-  url: "/images/pv-homepage.png"
+  url: "pv-homepage.png"
 links:
 - name: Article
   url: https://www.snsavage.com/blog/2016/creating-photo-vistas-with-sinatra.html
