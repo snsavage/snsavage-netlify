@@ -6,8 +6,6 @@ published: false
 tags:
   - Test
 ---
+![](/assets/carb-tracker-homepage.png)
+
 Testing images.
-
-
-
-![](/source/assets/family.jpg)
