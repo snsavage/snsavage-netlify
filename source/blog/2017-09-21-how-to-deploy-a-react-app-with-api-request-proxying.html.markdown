@@ -5,7 +5,6 @@ author: Scott Savage
 tags:
   - react
   - ruby on rails
-published: true
 ---
 
 I recently completed my final project for the [Flatiron School's Full Stack Web Development](https://flatironschool.com/programs/online-web-developer-career-course/) program.  This project consisted of a React front-end paired with a Ruby on Rails API backend.  As the project came to an end the question became, how to deploy this thing?

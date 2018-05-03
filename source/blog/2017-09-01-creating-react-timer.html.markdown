@@ -8,7 +8,6 @@ tags:
   - react
   - redux
   - ruby on rails
-published: true
 ---
 
 I started the Flatiron School’s Online Web Developer program in March 2016.  Sitting here on September 1st, 2017, with the completion of my final project, I’ve invested over 1,200 hours, completing over 650 lessons and 5 major projects.  [React Timer](https://github.com/snsavage/timer-react), my final project for the Flatiron School, represents the culmination of this effort.  For me it represents a big step in my progress as a software developer.  Here is a little bit about how React Timer came together.

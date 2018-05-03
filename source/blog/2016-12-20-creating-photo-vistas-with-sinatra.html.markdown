@@ -7,7 +7,6 @@ tags:
   - unsplash
   - learn.co
   - photo vistas
-published: true
 ---
 
 [Photo Vistas](https://photovistas.com) provides customized browser homepages using photos from [Unsplash](http://unsplash.com).  The app enables users to link their Unsplash account and add Unsplash photos they've liked or added to collections to their Photo Vistas queue.  Homepage photos are rotated daily.  

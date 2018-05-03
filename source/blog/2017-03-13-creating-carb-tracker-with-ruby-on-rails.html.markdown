@@ -6,7 +6,6 @@ tags:
   - flatiron school
   - learn.co
   - carb tracker
-published: true
 ---
 
 [Carb Tracker](https://carbtracker.herokuapp.com) allows users to track their nutrition in order to reach their health goals.  The original idea for the app was to build a tool to help users manage their diet based on [The Primal Blueprint Carbohydrate Curve](http://www.marksdailyapple.com/the-primal-carbohydrate-continuum/).  Users are able to add foods, create recipes, and log their food consumption.  Total nutrition statics are provided to help users understand their total consumption.  The [Nutrition Ix API](https://www.nutritionix.com/business/api) was used to allow users to search for foods and automatically receive nutrition data when creating recipes. 

@@ -6,7 +6,6 @@ tags:
   - flatiron school
   - learn.co
   - carb tracker
-published: true
 ---
 
 [Carb Tracker](https://carbtracker.herokuapp.com) was originally created as my Ruby on Rails project for the [Flatiron School's Online Web Developer Program](https://flatironschool.com/programs/online-web-developer-career-course/).  Following the Ruby on Rails coursework, the program continues with JavaScript, jQuery, and working with Rails APIs.  The JavaScript material culminates with updating your Ruby on Rails project with some JavaScript and jQuery.  The following is some information about the my JavaScript based updates to Carb Tracker.

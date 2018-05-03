@@ -9,7 +9,6 @@ tags:
   - presentations
   - static sites
 author: Scott Savage
-published: true
 ---
 
 ![Static Sites with Middleman](cposc-2016-middleman.png "Static Sites

@@ -5,7 +5,6 @@ author: Scott Savage
 tags:
   - flatiron school
   - ruby
-published: true
 ---
 
 One part of the Ruby language has tripped me up on several occasions.  In Ruby,

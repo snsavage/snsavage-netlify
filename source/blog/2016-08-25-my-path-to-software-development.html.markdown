@@ -5,7 +5,6 @@ author: Scott Savage
 tags:
   - flatiron school
   - learn.co
-published: true
 ---
 
 ![Nature Path - Image from Unsplash](https://source.unsplash.com/eOpewngf68w/600x400 "Nature Path - Image from Unsplash") 

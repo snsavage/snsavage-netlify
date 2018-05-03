@@ -6,8 +6,6 @@ tags:
   - flatiron school
   - learn.co
   - retrocasts
-published: true
-
 ---
 
 RetroCasts provides a command line utility (cli) for quickly accessing episode data from RailsCasts.com.  It provides a quick and convenient way to search the site without leaving the terminal.  This post discusses the process for making the RetroCasts gem.
