@@ -1,0 +1,10 @@
+---
+title: Testing
+author: Scott
+date: '2018-05-03 08:12 UTC'
+tags:
+  - Test
+---
+Testing
+
+![](/assets/cposc-2016-middleman.png)
