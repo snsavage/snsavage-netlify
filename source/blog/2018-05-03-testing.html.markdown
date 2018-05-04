@@ -7,4 +7,4 @@ tags:
 ---
 Testing
 
-![](/assets/cposc-2016-middleman.png)
+![CPOSC 2016](/assets/cposc-2016-middleman.png)
