@@ -22,3 +22,6 @@
 
 # Contentful Hashes
 .portfolio-space-hash
+
+# Exclude node_modules
+/node_modules
