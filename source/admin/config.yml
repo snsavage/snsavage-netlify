@@ -5,6 +5,7 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "/source/assets"
 public_folder: "/assets/"
+display_url: https://snsavage.com
 
 collections: # A list of collections the CMS should be able to edit
   - name: "blog" # Used in routes, ie.: /admin/collections/:slug/edit
