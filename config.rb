@@ -124,3 +124,9 @@ end
 activate :pry
 
 proxy "_redirects", "netlify-redirects", ignore: true
+
+after_build do
+  puts "Copying unhashed assets to build assets folder..."
+  `cp -a ./source/assets/. ./build/assets/`
+end
+
