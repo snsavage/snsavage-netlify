@@ -21,7 +21,6 @@ READMORE
 \### Tools for Programming Static Sites
 
 
-
 ^ Static site generators provide a toolchain for building static site, borrowing tools from web application frameworks, but with the end result static web pages instead of dynamic webpages.  
 
 ^ Web frameworks for static pages.
