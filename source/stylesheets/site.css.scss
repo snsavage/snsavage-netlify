@@ -711,6 +711,10 @@ form {
   display: block;
 }
 
+.form-div, hidden {
+  display: hidden;
+}
+
 .form-div:before {
   content: " ";
   display: table;
@@ -1064,3 +1068,4 @@ div.portfolio-summary-item {
     text-align: right;
   }
 }
+

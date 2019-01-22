@@ -8,7 +8,17 @@
   </p>
 
 <div class="contact-form">
-  <form name="contact" method="post" action="/thank-you.html" netlify>
+  <form
+    name="contact"
+    method="post"
+    netlify-honeypot="bot-field"
+    action="/thank-you.html"
+    netlify
+  >
+    <div class="form-div hidden">
+      <label>Robots only!</label>
+      <input name="bot-field" />
+    </div>
     <div class="form-div">
       <label>Name</label>
       <input class="form-fields" type="text" name="name">
