@@ -6,3 +6,5 @@ tags:
   - Test
 ---
 Testing.
+
+![null](/assets/_stripes_globe-1850-2018-mo.png)
