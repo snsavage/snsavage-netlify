@@ -19,5 +19,4 @@ gem 'middleman-google-analytics', '~> 2.1'
 
 gem 'middleman-pry'
 
-ruby "2.4.3"
-
+ruby "2.6.6"
