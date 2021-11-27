@@ -1,0 +1,7 @@
+{
+    "name": "snsavage-netlify",
+    "version": "0.0.1",
+    "dependencies": {
+        "@netlify/functions": "^0.10.0"
+    }
+}
