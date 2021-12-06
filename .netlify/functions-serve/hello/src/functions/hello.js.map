@@ -1,8 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../Users/snsavage/code/snsavage-netlify/functions/hello.ts"],
-  "sourceRoot": "/var/folders/w8/rqmqxw116qscs8285h1t649m0000gn/T/tmp-48454-yBFYNZWaL4vb",
-  "sourcesContent": ["import { Handler } from \"@netlify/functions\";\n\nconst handler: Handler = async function(event, context) {\n    return {\n        statusCode: 200,\n        body: JSON.stringify({message: \"Hello World\"})\n    };\n}\n\nexport { handler };\n"],
-  "mappings": ";;;;;;;;;AAAA;AAAA;AAAA;AAEA,IAAM,UAAmB,eAAe,OAAO,SAAS;AACpD,SAAO;AAAA,IACH,YAAY;AAAA,IACZ,MAAM,KAAK,UAAU,EAAC,SAAS;AAAA;AAAA;",
-  "names": []
-}
